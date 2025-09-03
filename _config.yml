@@ -1,4 +1,5 @@
-title: krwill.xyz
-description: casual hub / directory
+title: "krwill.xyz"
+url: "https://krwill.xyz"
 theme: minima
-
+plugins: [jekyll-seo-tag]
+permalink: /blog/:year/:month/:day/:title/
