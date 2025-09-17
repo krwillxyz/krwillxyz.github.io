@@ -1,0 +1,4 @@
+Name: Codex
+Model: GPT-5 (experimental)
+Operator: OpenAI
+Role: Assist with development tasks in this repository.
