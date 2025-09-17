@@ -10,75 +10,79 @@ body_class: landing
   <p>Artist and maker. Five doors: Shop, Life, Notes, Photos, Professional.</p>
 </section>
 
-<nav class="poster-nav" aria-label="Five doors">
-  <ul class="poster-stack">
+<nav class="link-hub" aria-label="Primary">
+  <ul class="links-grid">
     <li>
-      <a class="poster-card" href="https://driftingforms.com" target="_blank" rel="noopener">
-        <span class="poster-arrow" aria-hidden="true">
-          <svg viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
-            <path class="arrow-path" d="M10 58 C 36 20, 70 28, 96 40" />
-            <path class="arrow-path" d="M94 42 L118 28 M94 42 L116 56" />
+      <a class="link-card card-shop" href="https://driftingforms.com" target="_blank" rel="noopener noreferrer">
+        <span class="icon-pill" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M8 9.5V7a4 4 0 0 1 8 0v2.5" />
+            <path d="M6.5 9.5h11l-1 9h-9l-1-9Z" />
+            <line x1="10" y1="13" x2="14" y2="13" />
           </svg>
         </span>
-        <span class="poster-text">
-          <span class="poster-title">Shop → Drifting Forms</span>
-          <span class="poster-caption">Originals + prints, straight from the wall.</span>
+        <span class="text-group">
+          <span class="card-title">Shop → Drifting Forms</span>
+          <span class="card-caption">Originals + prints, straight from the wall.</span>
         </span>
       </a>
     </li>
     <li>
-      <a class="poster-card" href="https://instagram.com/krwillxyz" target="_blank" rel="noopener">
-        <span class="poster-arrow" aria-hidden="true">
-          <svg viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
-            <path class="arrow-path" d="M10 58 C 36 20, 70 28, 96 40" />
-            <path class="arrow-path" d="M94 42 L118 28 M94 42 L116 56" />
+      <a class="link-card card-life" href="https://instagram.com/krwillxyz" target="_blank" rel="noopener noreferrer">
+        <span class="icon-pill" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 18.8l-6-6.2a3.4 3.4 0 0 1 4.8-4.8l1.2 1.2 1.2-1.2a3.4 3.4 0 0 1 4.8 4.8Z" />
           </svg>
         </span>
-        <span class="poster-text">
-          <span class="poster-title">Life → Instagram (@krwillxyz)</span>
-          <span class="poster-caption">Studio sparks, daily noise, odd joys.</span>
+        <span class="text-group">
+          <span class="card-title">Life → Instagram (@krwillxyz)</span>
+          <span class="card-caption">Studio sparks, daily noise, odd joys.</span>
         </span>
       </a>
     </li>
     <li>
-      <a class="poster-card" href="/blog">
-        <span class="poster-arrow" aria-hidden="true">
-          <svg viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
-            <path class="arrow-path" d="M10 58 C 36 20, 70 28, 96 40" />
-            <path class="arrow-path" d="M94 42 L118 28 M94 42 L116 56" />
+      <a class="link-card card-notes" href="/blog">
+        <span class="icon-pill" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <rect x="5.5" y="6.5" width="13" height="12" rx="2" />
+            <path d="M8.5 4.8h7" />
+            <path d="M8.5 11.2h6" />
+            <path d="M8.5 14.2h6" />
           </svg>
         </span>
-        <span class="poster-text">
-          <span class="poster-title">Notes → Blog</span>
-          <span class="poster-caption">Ideas scribbled before they fade.</span>
+        <span class="text-group">
+          <span class="card-title">Notes → Blog</span>
+          <span class="card-caption">Ideas scribbled before they fade.</span>
         </span>
       </a>
     </li>
     <li>
-      <a class="poster-card" href="https://photos.krwill.xyz" target="_blank" rel="noopener">
-        <span class="poster-arrow" aria-hidden="true">
-          <svg viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
-            <path class="arrow-path" d="M10 58 C 36 20, 70 28, 96 40" />
-            <path class="arrow-path" d="M94 42 L118 28 M94 42 L116 56" />
+      <a class="link-card card-photos" href="https://photos.krwill.xyz" target="_blank" rel="noopener noreferrer">
+        <span class="icon-pill" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 8.5h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z" />
+            <path d="M9.5 7.5l1.1-2.2h2.8l1.1 2.2" />
+            <circle cx="12" cy="13.5" r="3" />
           </svg>
         </span>
-        <span class="poster-text">
-          <span class="poster-title">Photos → Photography</span>
-          <span class="poster-caption">Frames I couldn’t leave buried.</span>
+        <span class="text-group">
+          <span class="card-title">Photos → Photography</span>
+          <span class="card-caption">Frames I couldn’t leave buried.</span>
         </span>
       </a>
     </li>
     <li>
-      <a class="poster-card" href="https://kristopherwilliams.com" target="_blank" rel="noopener">
-        <span class="poster-arrow" aria-hidden="true">
-          <svg viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
-            <path class="arrow-path" d="M10 58 C 36 20, 70 28, 96 40" />
-            <path class="arrow-path" d="M94 42 L118 28 M94 42 L116 56" />
+      <a class="link-card card-pro" href="https://kristopherwilliams.com" target="_blank" rel="noopener noreferrer">
+        <span class="icon-pill" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M8 9V7.5a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3V9" />
+            <path d="M5 10.5h14v7.5a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2Z" />
+            <path d="M5 13.5h14" />
           </svg>
         </span>
-        <span class="poster-text">
-          <span class="poster-title">Professional → kristopherwilliams.com</span>
-          <span class="poster-caption">Résumé + projects, the buttoned-up me.</span>
+        <span class="text-group">
+          <span class="card-title">Professional → kristopherwilliams.com</span>
+          <span class="card-caption">Résumé + projects, the buttoned-up me.</span>
         </span>
       </a>
     </li>
