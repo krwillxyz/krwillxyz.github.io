@@ -11,30 +11,40 @@ body_class: photography
   <p class="photo-intro">This gallery pulls straight from <code>assets/photography</code>. Add new shots and they appear here automatically once deployed.</p>
 </section>
 
-{% assign gallery = site.static_files | where_exp: 'file', 'file.path contains "/assets/photography/"' %}
-{% assign images = gallery | where_exp: 'file', 'file.extname == ".jpg" or file.extname == ".jpeg" or file.extname == ".png" or file.extname == ".webp"' %}
-{% assign images = images | sort: 'path' | reverse %}
-
-{% if site.data.photography %}
-{% assign alt_overrides = site.data.photography %}
-{% else %}
-{% assign alt_overrides = '' | split: '' %}
-{% endif %}
-
-{% if images == empty %}
-<p class="photo-empty">No photos yet. See <code>assets/photography/README.md</code> for prep tips.</p>
-{% else %}
-<section class="photo-grid" aria-label="Photo gallery">
-  {% for image in images %}
-    {% assign override = alt_overrides | where: 'file', image.name | first %}
-    {% assign fallback = image.basename | replace: '-', ' ' | replace: '_', ' ' | replace: '  ', ' ' | strip | capitalize %}
-    {% assign alt_text = override.alt | default: fallback %}
-    <figure class="photo-frame">
-      <img src="{{ image.path | relative_url }}" alt="{{ alt_text }}" loading="lazy">
-      <figcaption>{{ alt_text }}</figcaption>
-    </figure>
+{% assign all_files = site.static_files | sort: 'path' %}
+{% capture gallery_markup %}
+  {% for image in all_files reversed %}
+    {% assign path = image.path %}
+    {% if path contains '/assets/photography/' %}
+      {% assign ext = image.extname | downcase %}
+      {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' %}
+        {% if site.data.photography %}
+          {% assign override = site.data.photography | where: 'file', image.name | first %}
+        {% else %}
+          {% assign override = nil %}
+        {% endif %}
+        {% assign fallback = image.basename | replace: '-', ' ' | replace: '_', ' ' | replace: '  ', ' ' | strip | capitalize %}
+        {% if override and override.alt %}
+          {% assign alt_text = override.alt %}
+        {% else %}
+          {% assign alt_text = fallback %}
+        {% endif %}
+        <figure class="photo-frame">
+          <img src="{{ image.path | relative_url }}" alt="{{ alt_text }}" loading="lazy">
+          <figcaption>{{ alt_text }}</figcaption>
+        </figure>
+      {% endif %}
+    {% endif %}
   {% endfor %}
+{% endcapture %}
+
+{% assign gallery_render = gallery_markup | strip %}
+{% if gallery_render != '' %}
+<section class="photo-grid" aria-label="Photo gallery">
+{{ gallery_markup }}
 </section>
+{% else %}
+<p class="photo-empty">No photos yet. See <code>assets/photography/README.md</code> for prep tips.</p>
 {% endif %}
 
 <style>
