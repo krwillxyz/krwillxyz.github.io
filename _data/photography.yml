@@ -1,0 +1,4 @@
+# Override alt text for gallery images by filename.
+# Example:
+# - file: studio-wall-2024.jpg
+#   alt: Studio wall with fresh pieces drying.

@@ -1,0 +1,205 @@
+---
+layout: default
+title: Notes
+description: "Latest notes from the studio. Scroll the feed or open any entry for the deep dive."
+body_class: notes
+---
+
+<section class="notes-hero" aria-labelledby="notes-title">
+  <p class="notes-eyebrow">Latest first</p>
+  <h1 id="notes-title">Notes feed</h1>
+  <p class="notes-intro">A running wall of fragments, process logs, and finished thoughts. Scroll to wander, tap to open any note in its own view.</p>
+</section>
+
+<section class="notes-list" aria-label="Notes timeline">
+  {% assign posts = site.posts %}
+  {% if posts == empty %}
+  <p class="notes-empty">No notes yet — check back soon.</p>
+  {% endif %}
+  {% for post in posts %}
+  <article class="note-card" data-note-index="{{ forloop.index }}">
+    <header class="note-header">
+      <p class="note-seed" aria-hidden="true">→ {{ forloop.index }}</p>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+    </header>
+    <div class="note-body">
+      {{ post.content }}
+    </div>
+    <footer class="note-footer">
+      <a class="note-link" href="{{ post.url | relative_url }}">Open note →</a>
+    </footer>
+  </article>
+  {% endfor %}
+</section>
+
+<style>
+  .notes-hero {
+    display: grid;
+    gap: 0.6rem;
+    max-width: 540px;
+  }
+
+  .notes-eyebrow {
+    margin: 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    color: rgba(17, 17, 17, 0.55);
+  }
+
+  .notes-hero h1 {
+    margin: 0;
+    font-size: clamp(24px, 4.2vw, 40px);
+    line-height: 1.12;
+  }
+
+  .notes-intro {
+    margin: 0;
+    font-size: clamp(15px, 2.4vw, 18px);
+    color: rgba(17, 17, 17, 0.68);
+    max-width: 46ch;
+  }
+
+  .notes-list {
+    display: grid;
+    gap: clamp(20px, 4vw, 32px);
+  }
+
+  .note-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: clamp(18px, 5vw, 28px);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    display: grid;
+    gap: 1.2rem;
+    transform: translateY(18px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+  .note-card.is-visible {
+    transform: none;
+    opacity: 1;
+  }
+
+  .note-header {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .note-header h2 {
+    margin: 0;
+    font-size: clamp(20px, 3.6vw, 30px);
+    line-height: 1.15;
+    word-break: break-word;
+  }
+
+  .note-header h2 a {
+    text-decoration: none;
+  }
+
+  .note-seed {
+    margin: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(17, 17, 17, 0.45);
+  }
+
+  .note-header time {
+    font-size: 0.9rem;
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  .note-body > * {
+    margin: 0 0 0.9rem;
+    color: rgba(17, 17, 17, 0.78);
+    font-size: clamp(15px, 2.6vw, 18px);
+    line-height: 1.6;
+    max-width: 64ch;
+  }
+
+  .note-body > h1:first-child {
+    display: none;
+  }
+
+  .note-body h2,
+  .note-body h3,
+  .note-body h4 {
+    font-size: clamp(18px, 3vw, 24px);
+    line-height: 1.3;
+    color: rgba(17, 17, 17, 0.9);
+  }
+
+  .note-body ul,
+  .note-body ol {
+    padding-left: 1.2rem;
+  }
+
+  .note-body blockquote {
+    border-left: 3px solid rgba(17, 17, 17, 0.2);
+    padding-left: 1rem;
+    font-style: italic;
+  }
+
+  .note-body img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 26px rgba(17, 17, 17, 0.12);
+  }
+
+  .note-body > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .note-footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .note-link {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .note-link:hover,
+  .note-link:focus-visible {
+    text-decoration: underline;
+  }
+
+  .notes-empty {
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .note-card {
+      transition: none !important;
+      transform: none !important;
+      opacity: 1 !important;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.note-card');
+    if (!('IntersectionObserver' in window) || !cards.length) {
+      cards.forEach(card => card.classList.add('is-visible'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -20%', threshold: 0.1 });
+
+    cards.forEach(card => observer.observe(card));
+  });
+</script>

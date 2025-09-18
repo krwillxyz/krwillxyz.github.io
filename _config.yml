@@ -4,4 +4,4 @@ description: "Artist and maker. Five doors: Shop, Life, Notes, Photos, Professio
 social_image: /assets/social-card.svg
 theme: minima
 plugins: [jekyll-seo-tag]
-permalink: /blog/:year/:month/:day/:title/
+permalink: /notes/:year/:month/:day/:title/

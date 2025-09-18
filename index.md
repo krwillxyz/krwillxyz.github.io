@@ -22,7 +22,8 @@ body_class: landing
           </svg>
         </span>
         <span class="text-group">
-          <span class="card-title">Shop → Drifting Forms</span>
+          <span class="card-subtitle">→ Drifting Forms</span>
+          <span class="card-title">Shop</span>
           <span class="card-caption">Originals + prints, straight from the wall.</span>
         </span>
       </a>
@@ -35,13 +36,14 @@ body_class: landing
           </svg>
         </span>
         <span class="text-group">
-          <span class="card-title">Life → Instagram (@krwillxyz)</span>
+          <span class="card-subtitle">→ Instagram (@krwillxyz)</span>
+          <span class="card-title">Life</span>
           <span class="card-caption">Studio sparks, daily noise, odd joys.</span>
         </span>
       </a>
     </li>
     <li>
-      <a class="link-card card-notes" href="/blog">
+      <a class="link-card card-notes" href="/notes/">
         <span class="icon-pill" aria-hidden="true">
           <svg viewBox="0 0 24 24">
             <rect x="5.5" y="6.5" width="13" height="12" rx="2" />
@@ -51,13 +53,14 @@ body_class: landing
           </svg>
         </span>
         <span class="text-group">
-          <span class="card-title">Notes → Blog</span>
+          <span class="card-subtitle">→ Notes feed</span>
+          <span class="card-title">Notes</span>
           <span class="card-caption">Ideas scribbled before they fade.</span>
         </span>
       </a>
     </li>
     <li>
-      <a class="link-card card-photos" href="https://photos.krwill.xyz" target="_blank" rel="noopener noreferrer">
+      <a class="link-card card-photos" href="/photography/">
         <span class="icon-pill" aria-hidden="true">
           <svg viewBox="0 0 24 24">
             <path d="M6 8.5h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z" />
@@ -66,7 +69,8 @@ body_class: landing
           </svg>
         </span>
         <span class="text-group">
-          <span class="card-title">Photos → Photography</span>
+          <span class="card-subtitle">→ Photography</span>
+          <span class="card-title">Photos</span>
           <span class="card-caption">Frames I couldn’t leave buried.</span>
         </span>
       </a>
@@ -81,7 +85,8 @@ body_class: landing
           </svg>
         </span>
         <span class="text-group">
-          <span class="card-title">Professional → kristopherwilliams.com</span>
+          <span class="card-subtitle">→ kristopherwilliams.com</span>
+          <span class="card-title">Professional</span>
           <span class="card-caption">Résumé + projects, the buttoned-up me.</span>
         </span>
       </a>

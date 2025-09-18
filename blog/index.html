@@ -1,16 +1,9 @@
 ---
 layout: default
-title: Blog
+title: Redirecting to Notes
+permalink: /blog/
 ---
 
-<h2>Blog</h2>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <span style="color:#9aa3ad">— {{ post.date | date: "%b %d, %Y" }}</span>
-    </li>
-  {% else %}
-    <li>No posts yet.</li>
-  {% endfor %}
-</ul>
+<meta http-equiv="refresh" content="0; url={{ '/notes/' | relative_url }}">
+
+<p>If you are not redirected automatically, <a href="{{ '/notes/' | relative_url }}">head to the Notes feed</a>.</p>
