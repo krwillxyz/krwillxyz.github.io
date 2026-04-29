@@ -1,77 +1,81 @@
 <!doctype html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Calvin’s 5th Birthday RSVP</title>
 
   <style>
-
     body {
-
       margin: 0;
-
       min-height: 100vh;
-
       display: grid;
-
       place-items: center;
-
-      background: #10230f;
-
+      background: #6fbf73; /* lighter green */
       padding: 16px;
-
       box-sizing: border-box;
-
+      font-family: Arial, sans-serif;
     }
 
-    a {
-
-      display: block;
-
+    .invite-wrapper {
+      position: relative;
       max-width: 900px;
-
       width: 100%;
-
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    img {
+    .invite-wrapper:hover {
+      transform: scale(1.01);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+    }
 
+    .invite-wrapper img {
       display: block;
-
       width: 100%;
-
       height: auto;
-
-      border-radius: 12px;
-
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
-
     }
 
-  </style>
+    /* Click hint overlay */
+    .cta {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.65);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      pointer-events: none;
+      animation: pulse 2s infinite;
+    }
 
+    @keyframes pulse {
+      0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+      50% { opacity: 1; transform: translateX(-50%) scale(1.05); }
+      100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+    }
+
+    /* Mobile tap feedback */
+    a:active .invite-wrapper {
+      transform: scale(0.99);
+    }
+  </style>
 </head>
 
 <body>
-
   <a href="https://forms.gle/wgNc7Tepbwp4wjpN6" target="_blank" rel="noopener noreferrer">
-
-    <img
-
-      src="CALVININVITE.png"
-
-      alt="Calvin is turning 5! Birthday party invitation. Click to RSVP."
-
-    />
-
+    <div class="invite-wrapper">
+      <img
+        src="CALVININVITE.png"
+        alt="Calvin is turning 5! Click to RSVP"
+      />
+      <div class="cta">Tap to RSVP 🎉</div>
+    </div>
   </a>
-
 </body>
-
 </html>
