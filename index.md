@@ -6,8 +6,14 @@ body_class: landing
 ---
 
 <section class="page-head" aria-labelledby="page-title">
+  <p class="eyebrow">Artist / maker / observer</p>
   <h1 id="page-title">Kristopher Williams</h1>
-  <p>Artist and maker. Five doors: Shop, Life, Notes, Photos, Professional.</p>
+  <p>A warmer front door for originals, notes, photos, and the buttoned-up work. Pick a path and wander.</p>
+  <div class="hero-actions" aria-label="Site highlights">
+    <span class="hero-chip">Originals + prints</span>
+    <span class="hero-chip">Studio notes</span>
+    <span class="hero-chip">Field photos</span>
+  </div>
 </section>
 
 <nav class="link-hub" aria-label="Primary">
