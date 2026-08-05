@@ -11,7 +11,7 @@ favicon: /assets/products/page-push/icon-0.1.2.png
   <article class="product-document-card">
     <p class="product-kicker">Page Push · Privacy</p>
     <h1>Your browsing data goes where you choose.</h1>
-    <p class="document-intro">Page Push has no account system, hosted backend, analytics, advertising, or telemetry. It sends a page event only when you click <strong>Push page</strong>, and only to the HTTPS API endpoint saved in your local browser settings.</p>
+    <p class="document-intro">Page Push has no account system, hosted backend, analytics, advertising, or telemetry. It sends a page event only when you click the Page Push toolbar icon, and only to the HTTPS API endpoint saved in your local browser settings.</p>
 
     <section class="document-section"><h2>What a manual push can include</h2><ul><li>Current page URL, title, and hostname</li><li>Timestamp and favicon URL, when available</li><li>Referring URL, when available</li><li>Selected text, when enabled and present</li></ul></section>
     <section class="document-section"><h2>What Page Push does not capture</h2><p>Page bodies, form contents, passwords, cookies, keystrokes, screenshots, and automatic browsing history are not captured by Version 0.1.</p></section>
