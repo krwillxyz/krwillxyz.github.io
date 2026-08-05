@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Page Push · Your browser. Your endpoint.
-description: "Page Push pushes the current webpage directly to an HTTPS API endpoint you choose. No cloud, account, tracking, or analytics."
+description: "Configure once. Push the current page directly to your HTTPS endpoint."
 body_class: product-site page-push-site
 product_styles: true
 favicon: /assets/products/page-push/icon-0.1.2.png
