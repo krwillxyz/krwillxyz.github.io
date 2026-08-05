@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+{% assign favicon_path = page.favicon | default: '/favicon.ico' %}
+<link rel="icon" href="{{ favicon_path | relative_url }}" sizes="any"{% if page.favicon %} type="image/png"{% endif %}>
 <title>{{ page.title | default: site.title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
 <meta property="og:title" content="{{ page.og_title | default: page.title | default: site.title }}">

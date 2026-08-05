@@ -4,6 +4,7 @@ title: Page Push · Your browser. Your endpoint.
 description: "Page Push sends the current webpage directly to an HTTPS API endpoint you choose. No cloud, account, tracking, or analytics."
 body_class: product-site page-push-site
 product_styles: true
+favicon: /assets/products/page-push/icon-128.png
 social_image: /assets/products/page-push/social-card.png
 ---
 

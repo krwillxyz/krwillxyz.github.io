@@ -4,6 +4,7 @@ title: Page Push Support
 description: "Setup, receiver requirements, and troubleshooting for Page Push."
 body_class: product-site page-push-site product-document
 product_styles: true
+favicon: /assets/products/page-push/icon-128.png
 ---
 
 <div class="product-shell">
