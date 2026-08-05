@@ -11,9 +11,10 @@ favicon: /assets/products/page-push/icon-0.1.2.png
   <article class="product-document-card">
     <p class="product-kicker">Page Push · Privacy</p>
     <h1>Your browsing data goes where you choose.</h1>
-    <p class="document-intro">Page Push has no account system, hosted backend, analytics, advertising, or telemetry. It pushes a page event only when you click the Page Push toolbar icon, and only to the HTTPS API endpoint saved in your local browser settings.</p>
+    <p class="document-intro">Page Push has no account system, hosted backend, analytics, advertising, or telemetry. It sends a page event only when you deliberately activate Page Push or run its connection test, and only to the HTTPS API endpoint saved in your local browser settings.</p>
 
     <section class="document-section"><h2>What a manual push can include</h2><ul><li>Current page URL, title, and hostname</li><li>Timestamp and favicon URL, when available</li><li>Referring URL, when available</li><li>Selected text, when enabled and present</li></ul></section>
+    <section class="document-section"><h2>What Page Push does not do</h2><ul><li>Does not operate a cloud service.</li><li>Does not receive your browsing data.</li><li>Does not collect analytics, telemetry, or crash reports.</li><li>Does not automatically monitor browsing.</li><li>Does not send page events anywhere except the HTTPS endpoint you configure.</li></ul></section>
     <section class="document-section"><h2>What Page Push does not capture</h2><p>Page bodies, form contents, passwords, cookies, keystrokes, screenshots, and automatic browsing history are not captured by Version 0.1.</p></section>
     <section class="document-section"><h2>Credentials and permissions</h2><p>Your endpoint and optional authorization value are stored locally through browser storage. Page Push requests access only to the endpoint origin you approve. It does not synchronize these settings through a Page Push service.</p></section>
     <section class="document-section"><h2>Retention</h2><p>Page Push retains its settings and one compact last-delivery result in browser. It does not retain a local history of pushed pages. Your chosen endpoint controls any data it receives.</p></section>
