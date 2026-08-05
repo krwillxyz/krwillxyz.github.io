@@ -4,8 +4,8 @@ title: Page Push · Your browser. Your endpoint.
 description: "Page Push sends the current webpage directly to an HTTPS API endpoint you choose. No cloud, account, tracking, or analytics."
 body_class: product-site page-push-site
 product_styles: true
-favicon: /assets/products/page-push/icon-128.png
-social_image: /assets/products/page-push/social-card.png
+favicon: /assets/products/page-push/icon-0.1.2.png
+social_image: /assets/products/page-push/social-card-0.1.2.png
 ---
 
 <div class="product-shell">
@@ -17,14 +17,14 @@ social_image: /assets/products/page-push/social-card.png
   <article class="page-push-panel">
     <section class="page-push-hero">
       <div class="page-push-copy">
-        <img class="page-push-mark" src="/assets/products/page-push/icon-128.png" alt="Page Push">
+        <img class="page-push-mark" src="/assets/products/page-push/icon-0.1.2.png" alt="Page Push">
         <p class="product-kicker">Chrome extension · Version 0.1</p>
         <h1>Your browser. Your endpoint.</h1>
         <p class="page-push-lede">Send the page you are viewing directly to software you control. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
         <div class="trust-facts" aria-label="Page Push trust facts"><span>Manual only</span><span>No cloud</span><span>No account</span><span>No analytics</span></div>
         <span class="release-status">Chrome Web Store submission in progress</span>
       </div>
-      <figure class="page-push-demo"><img src="/assets/products/page-push/manual-push.png" alt="Page Push successfully delivering an example article to a configured endpoint"></figure>
+      <figure class="page-push-demo"><img src="/assets/products/page-push/manual-push-0.1.2.png" alt="Page Push successfully delivering an example article to a configured endpoint"></figure>
     </section>
 
     <section class="product-section" aria-labelledby="one-job-title">
@@ -38,6 +38,6 @@ social_image: /assets/products/page-push/social-card.png
       </div>
     </section>
 
-    <footer class="product-footer"><span>Built by Kristopher Williams in Mukilteo, Washington.</span><span class="product-footer-links"><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></span></footer>
+    <footer class="product-footer"><span>Page Push · Version 0.1</span><span class="product-footer-links"><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></span></footer>
   </article>
 </div>

@@ -4,7 +4,7 @@ title: Page Push Privacy Statement
 description: "The Page Push privacy statement: manual delivery, no cloud service, no account, and no analytics."
 body_class: product-site page-push-site product-document
 product_styles: true
-favicon: /assets/products/page-push/icon-128.png
+favicon: /assets/products/page-push/icon-0.1.2.png
 ---
 
 <div class="product-shell">
