@@ -24,13 +24,13 @@ social_image: /assets/products/page-push/social-card-0.1.2.png
         <div class="flow-node flow-browser"><span class="flow-node-icon">↗</span><div><b>Current page</b><small>URL · title · selected text</small></div></div>
         <div class="flow-path"><span>JSON</span><i aria-hidden="true">→</i></div>
         <div class="flow-node flow-endpoint"><span class="flow-node-icon">{ }</span><div><b>Your API</b><small>HTTPS endpoint</small></div></div>
-        <p class="flow-proof"><strong>browser talks directly to your endpoint.</strong><br>No Page Push server in between.</p>
+        <p class="flow-proof"><strong>Your browser talks directly to your endpoint.</strong><br>No Page Push server in between.</p>
       </figure>
     </section>
 
     <section class="product-section" aria-labelledby="one-job-title">
       <p class="product-kicker">One job, done clearly</p>
-      <h2 id="one-job-title">A direct bridge from browser to your software.</h2>
+      <h2 id="one-job-title">A direct bridge from your browser to your software.</h2>
       <div class="capability-grid">
         <div><b>01</b><p>Push the current page only when you click.</p></div>
         <div><b>02</b><p>Include selected text when it is useful.</p></div>
@@ -46,7 +46,7 @@ social_image: /assets/products/page-push/social-card-0.1.2.png
         <div><b>What moves</b><p>Page URL, title, hostname, timestamp, favicon, referring URL when available, and optional selected text.</p></div>
         <div><b>Why use it</b><p>Feed a personal API, webhook, archive, notes system, or automation without copying page details by hand.</p></div>
         <div><b>Who it fits</b><p>Developers, self-hosters, researchers, and privacy-minded people who want their browser to work with their own tools.</p></div>
-        <div><b>Where it goes</b><p>Directly from browser to the HTTPS endpoint you approve. No Page Push account, hosted middleman, tracking, or analytics.</p></div>
+        <div><b>Where it goes</b><p>Directly from your browser to the HTTPS endpoint you approve. No Page Push account, hosted middleman, tracking, or analytics.</p></div>
       </div>
     </section>
 
