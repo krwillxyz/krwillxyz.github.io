@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Page Push · Your browser. Your endpoint.
-description: "Page Push sends the current webpage directly to an HTTPS API endpoint you choose. No cloud, account, tracking, or analytics."
+description: "Page Push pushes the current webpage directly to an HTTPS API endpoint you choose. No cloud, account, tracking, or analytics."
 body_class: product-site page-push-site
 product_styles: true
 favicon: /assets/products/page-push/icon-0.1.2.png
-social_image: /assets/products/page-push/social-card-0.1.2.png
+social_image: /assets/products/page-push/social-card-0.1.6.png
 ---
 
 <div class="product-shell">
@@ -15,7 +15,8 @@ social_image: /assets/products/page-push/social-card-0.1.2.png
         <img class="page-push-mark" src="/assets/products/page-push/icon-0.1.2.png" alt="Page Push">
         <p class="product-kicker">browser extension · Version 0.1</p>
         <h1>Your browser. Your endpoint.</h1>
-        <p class="page-push-lede">Send the page you are viewing directly to software you control. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
+        <p class="page-push-slogan">Configure once. Push anywhere.</p>
+        <p class="page-push-lede">Push the page you are viewing directly to software you control. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
         <div class="trust-facts" aria-label="Page Push trust facts"><span>Manual only</span><span>No cloud</span><span>No account</span><span>No analytics</span></div>
         <a class="release-status" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store · listing pending</a>
       </div>
@@ -34,7 +35,7 @@ social_image: /assets/products/page-push/social-card-0.1.2.png
       <div class="capability-grid">
         <div><b>01</b><p>Push the current page only when you click.</p></div>
         <div><b>02</b><p>Include selected text when it is useful.</p></div>
-        <div><b>03</b><p>Send only to an HTTPS endpoint you approve.</p></div>
+        <div><b>03</b><p>Push only to an HTTPS endpoint you approve.</p></div>
         <div><b>04</b><p>See an honest success or failure result.</p></div>
       </div>
     </section>

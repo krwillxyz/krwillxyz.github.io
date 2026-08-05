@@ -140,9 +140,17 @@
   letter-spacing: -0.055em;
 }
 
+.page-push-slogan {
+  margin: 25px 0 0;
+  color: #2f7158;
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  font-weight: 850;
+  letter-spacing: -0.02em;
+}
+
 .page-push-lede {
   max-width: 42ch;
-  margin: 27px 0 0;
+  margin: 12px 0 0;
   color: rgba(23, 33, 29, 0.72);
   font: clamp(1rem, 2vw, 1.2rem)/1.56 Georgia, serif;
 }
