@@ -7,7 +7,7 @@ product_styles: true
 ---
 
 <div class="product-shell">
-  <nav class="product-nav" aria-label="Page Push navigation"><a href="/products/page-push/">Page Push</a><div class="product-nav-links"><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></div></nav>
+  <nav class="product-nav" aria-label="Page Push navigation"><a href="/products/page-push/">Page Push</a><div class="product-nav-links"><a href="/products/page-push/privacy/" aria-current="page">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></div></nav>
   <article class="product-document-card">
     <p class="product-kicker">Page Push · Privacy</p>
     <h1>Your browsing data goes where you choose.</h1>
@@ -18,6 +18,6 @@ product_styles: true
     <section class="document-section"><h2>Credentials and permissions</h2><p>Your endpoint and optional authorization value are stored locally through Chrome storage. Page Push requests access only to the endpoint origin you approve. It does not synchronize these settings through a Page Push service.</p></section>
     <section class="document-section"><h2>Retention</h2><p>Page Push retains its settings and one compact last-delivery result in Chrome. It does not retain a local history of pushed pages. Your chosen endpoint controls any data it receives.</p></section>
     <section class="document-section"><h2>Removing data</h2><p>Removing the extension clears Page Push data stored by Chrome. Data previously delivered to your endpoint is governed by that endpoint and must be removed there.</p></section>
-    <section class="document-section"><h2>Contact</h2><p>Questions about Page Push privacy can be sent to <a href="mailto:krwill@fastmail.com">krwill@fastmail.com</a>.</p><p>Effective August 5, 2026.</p></section>
+    <section class="document-section"><h2>Contact</h2><p>Questions about Page Push privacy can be sent to <a href="mailto:support@krwill.xyz">support@krwill.xyz</a>.</p><p>Effective August 5, 2026.</p></section>
   </article>
 </div>

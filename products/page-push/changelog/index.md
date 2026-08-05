@@ -7,7 +7,7 @@ product_styles: true
 ---
 
 <div class="product-shell">
-  <nav class="product-nav" aria-label="Page Push navigation"><a href="/products/page-push/">Page Push</a><div class="product-nav-links"><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a></div></nav>
+  <nav class="product-nav" aria-label="Page Push navigation"><a href="/products/page-push/">Page Push</a><div class="product-nav-links"><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/" aria-current="page">Changelog</a></div></nav>
   <article class="product-document-card">
     <p class="product-kicker">Page Push · Changelog</p>
     <h1>Release history.</h1>
