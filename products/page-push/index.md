@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Page Push · Your browser. Your endpoint.
-description: "Page Push sends the current webpage directly to an HTTPS API endpoint you choose. No cloud, account, tracking, or analytics."
+title: Page Push · Send pages directly to your API
+description: "Page Push sends page URLs, titles, and selected text directly from Chrome to your HTTPS API. No hosted middleman, account, tracking, or analytics."
 body_class: product-site page-push-site
 product_styles: true
 favicon: /assets/products/page-push/icon-0.1.2.png
@@ -14,8 +14,9 @@ social_image: /assets/products/page-push/social-card-0.1.2.png
       <div class="page-push-copy">
         <img class="page-push-mark" src="/assets/products/page-push/icon-0.1.2.png" alt="Page Push">
         <p class="product-kicker">Chrome extension · Version 0.1</p>
-        <h1>Your browser. Your endpoint.</h1>
-        <p class="page-push-lede">Send the page you are viewing directly to software you control. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
+        <h1>Send this page to your API.</h1>
+        <p class="page-push-lede">Page Push turns the webpage you are viewing into a compact JSON event and sends it directly to software you control. Capture the URL, title, hostname, timestamp, and optional selected text without copying fields by hand.</p>
+        <p class="audience-line">For developers, self-hosters, researchers, and privacy-minded people connecting Chrome to personal APIs, webhooks, archives, notes, or automations.</p>
         <div class="trust-facts" aria-label="Page Push trust facts"><span>Manual only</span><span>No cloud</span><span>No account</span><span>No analytics</span></div>
         <a class="release-status" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store · listing pending</a>
       </div>
@@ -29,13 +30,13 @@ social_image: /assets/products/page-push/social-card-0.1.2.png
     </section>
 
     <section class="product-section" aria-labelledby="one-job-title">
-      <p class="product-kicker">One job, done clearly</p>
-      <h2 id="one-job-title">A direct bridge from Chrome to your software.</h2>
+      <p class="product-kicker">What it does</p>
+      <h2 id="one-job-title">Useful page context, without another inbox.</h2>
       <div class="capability-grid">
-        <div><b>01</b><p>Push the current page only when you click.</p></div>
-        <div><b>02</b><p>Include selected text when it is useful.</p></div>
-        <div><b>03</b><p>Send only to an HTTPS endpoint you approve.</p></div>
-        <div><b>04</b><p>See an honest success or failure result.</p></div>
+        <div><b>01 · Choose</b><p>Configure one HTTPS API endpoint and optional authorization.</p></div>
+        <div><b>02 · Capture</b><p>Open Page Push on any webpage. Include selected text when it matters.</p></div>
+        <div><b>03 · Send</b><p>One click posts a predictable JSON event directly from Chrome.</p></div>
+        <div><b>04 · Use</b><p>Save research, trigger automation, or feed software you already control.</p></div>
       </div>
     </section>
 

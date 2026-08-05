@@ -147,6 +147,14 @@
   font: clamp(1rem, 2vw, 1.2rem)/1.56 Georgia, serif;
 }
 
+.audience-line {
+  max-width: 50ch;
+  margin: 18px 0 0;
+  color: rgba(23, 33, 29, 0.58);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
 .trust-facts {
   display: flex;
   flex-wrap: wrap;
