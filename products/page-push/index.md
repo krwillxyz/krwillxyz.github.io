@@ -13,10 +13,10 @@ social_image: /assets/products/page-push/social-card-0.1.7.png
     <section class="page-push-hero">
       <div class="page-push-copy">
         <img class="page-push-mark" src="/assets/products/page-push/icon-0.1.2.png" alt="Page Push">
-        <p class="product-kicker">browser extension · Version 0.1.7</p>
+        <p class="product-kicker">browser extension</p>
         <h1>Your browser. Your endpoint.</h1>
         <p class="page-push-slogan">Configure once. Push anywhere.</p>
-        <p class="page-push-lede">Push the page you are viewing directly to software you control. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
+        <p class="page-push-lede">Push the page you’re viewing directly to your own software. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
         <div class="trust-facts" aria-label="Page Push trust facts"><span>Manual only</span><span>No cloud</span><span>No account</span><span>No analytics</span></div>
         <a class="release-status" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store · listing pending</a>
       </div>
@@ -34,7 +34,7 @@ social_image: /assets/products/page-push/social-card-0.1.7.png
       <h2 id="one-job-title">A direct bridge from your browser to your software.</h2>
       <div class="capability-grid">
         <div><b>01</b><p>Push the current page only when you click.</p></div>
-        <div><b>02</b><p>Include selected text when it is useful.</p></div>
+        <div><b>02</b><p>Include selected text when you’ve highlighted it.</p></div>
         <div><b>03</b><p>Push only to an HTTPS endpoint you approve.</p></div>
         <div><b>04</b><p>See an honest success or failure result.</p></div>
       </div>

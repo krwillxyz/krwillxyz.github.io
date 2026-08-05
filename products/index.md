@@ -17,7 +17,7 @@ product_styles: true
       <div>
         <h2>Page Push</h2>
         <p>Configure once. Push anywhere.</p>
-        <span class="product-card-meta">browser extension · Version 0.1.7</span>
+        <span class="product-card-meta">browser extension</span>
       </div>
       <span class="product-card-arrow" aria-hidden="true">→</span>
     </a>
