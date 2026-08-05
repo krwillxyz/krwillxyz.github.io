@@ -22,6 +22,7 @@
 <meta name="twitter:description" content="{{ page.twitter_description | default: site.description }}">
 {% endif %}
 {% seo %}
+{% if page.product_styles %}<link rel="stylesheet" href="{{ '/assets/products/products.css' | relative_url }}">{% endif %}
 <style>
   :root {
     color-scheme: light;

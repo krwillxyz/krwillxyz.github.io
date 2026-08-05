@@ -38,6 +38,7 @@ bio_image: /assets/images/world-cup-bio.jpg
         </span>
       </p>
       <p class="email-line"><a href="mailto:kristopher.williams@fastmail.com">kristopher.williams<wbr>@fastmail.com</a></p>
+      <p><a href="/products/">Products →</a></p>
     </div>
   </div>
 </section>
