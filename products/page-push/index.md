@@ -9,11 +9,6 @@ social_image: /assets/products/page-push/social-card-0.1.2.png
 ---
 
 <div class="product-shell">
-  <nav class="product-nav" aria-label="Page Push navigation">
-    <a href="/products/page-push/" aria-current="page">Page Push</a>
-    <div class="product-nav-links"><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></div>
-  </nav>
-
   <article class="page-push-panel">
     <section class="page-push-hero">
       <div class="page-push-copy">
@@ -22,9 +17,15 @@ social_image: /assets/products/page-push/social-card-0.1.2.png
         <h1>Your browser. Your endpoint.</h1>
         <p class="page-push-lede">Send the page you are viewing directly to software you control. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
         <div class="trust-facts" aria-label="Page Push trust facts"><span>Manual only</span><span>No cloud</span><span>No account</span><span>No analytics</span></div>
-        <span class="release-status">Chrome Web Store submission in progress</span>
+        <a class="release-status" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store · listing pending</a>
       </div>
-      <figure class="page-push-demo"><img src="/assets/products/page-push/manual-push-0.1.2.png" alt="Page Push successfully delivering an example article to a configured endpoint"></figure>
+      <figure class="page-push-demo" aria-label="Page Push direct delivery flow">
+        <figcaption>Direct delivery</figcaption>
+        <div class="flow-node flow-browser"><span class="flow-node-icon">◉</span><div><b>Chrome</b><small>The page you choose</small></div></div>
+        <div class="flow-path"><span>HTTPS POST · JSON</span><i aria-hidden="true">→</i></div>
+        <div class="flow-node flow-endpoint"><span class="flow-node-icon">{ }</span><div><b>Your endpoint</b><small>Software you control</small></div></div>
+        <p class="flow-proof"><strong>No Page Push server.</strong> Nothing is copied to an account or routed through a hosted middleman.</p>
+      </figure>
     </section>
 
     <section class="product-section" aria-labelledby="one-job-title">
@@ -38,6 +39,6 @@ social_image: /assets/products/page-push/social-card-0.1.2.png
       </div>
     </section>
 
-    <footer class="product-footer"><span>Page Push · Version 0.1</span><span class="product-footer-links"><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></span></footer>
+    <footer class="product-footer"><span>Built by Kristopher Williams in Mukilteo, Washington.</span><span class="product-footer-links"><a href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store</a><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></span></footer>
   </article>
 </div>
