@@ -9,7 +9,7 @@ social_image: /assets/products/page-push/social-card.png
 
 <div class="product-shell">
   <nav class="product-nav" aria-label="Page Push navigation">
-    <a href="/products/">Kristopher Williams / Products</a>
+    <a href="/products/page-push/" aria-current="page">Page Push</a>
     <div class="product-nav-links"><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></div>
   </nav>
 
