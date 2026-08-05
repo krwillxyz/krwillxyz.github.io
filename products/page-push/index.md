@@ -5,7 +5,7 @@ description: "Page Push pushes the current webpage directly to an HTTPS API endp
 body_class: product-site page-push-site
 product_styles: true
 favicon: /assets/products/page-push/icon-0.1.2.png
-social_image: /assets/products/page-push/social-card-0.1.6.png
+social_image: /assets/products/page-push/social-card-0.1.7.png
 ---
 
 <div class="product-shell">
@@ -13,7 +13,7 @@ social_image: /assets/products/page-push/social-card-0.1.6.png
     <section class="page-push-hero">
       <div class="page-push-copy">
         <img class="page-push-mark" src="/assets/products/page-push/icon-0.1.2.png" alt="Page Push">
-        <p class="product-kicker">browser extension · Version 0.1</p>
+        <p class="product-kicker">browser extension · Version 0.1.7</p>
         <h1>Your browser. Your endpoint.</h1>
         <p class="page-push-slogan">Configure once. Push anywhere.</p>
         <p class="page-push-lede">Push the page you are viewing directly to software you control. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
