@@ -22,7 +22,7 @@ product_styles: true
       <div>
         <h2>Page Push</h2>
         <p>Your browser. Your endpoint.</p>
-        <span class="product-card-meta">Chrome extension · Version 0.1</span>
+        <span class="product-card-meta">browser extension · Version 0.1</span>
       </div>
       <span class="product-card-arrow" aria-hidden="true">→</span>
     </a>
