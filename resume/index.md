@@ -31,6 +31,7 @@ body_class: resume-page
             <div><h3>Independent engineer &amp; systems builder</h3><p class="resume-org">Atlas · Page Push · Drifting Forms</p></div>
             <p class="resume-date">2025–present</p>
           </header>
+          <p class="resume-role-note">Extracting focused public products from a long-running personal systems platform.</p>
           <ul>
             <li>Build and operate Atlas, an evolving local-first personal system I use to give records, signals, and ideas durable addresses, provenance, search, and useful interfaces.</li>
             <li>Published <a href="/products/page-push/">Page Push</a>, a privacy-oriented Chrome extension that sends page context directly to a user-chosen HTTPS endpoint.</li>
@@ -46,7 +47,6 @@ body_class: resume-page
           </header>
           <ul>
             <li>Built and maintained portions of the Azure VMware Solution control plane, with work spanning networking provisioning, reliability, performance, diagnostics, and production support.</li>
-            <li>Contributed across multiple teams and problem areas, translating complex infrastructure behavior into changes that could be deployed, observed, and supported within a large engineering organization.</li>
           </ul>
         </article>
 
