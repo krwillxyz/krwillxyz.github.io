@@ -19,7 +19,7 @@ body_class: resume-page
     <section>
       <h2>Profile</h2>
       <div class="resume-copy">
-        <p>I turn ambiguous ideas into durable working systems. My background spans healthcare software, Microsoft Azure, independent products, creative practice, and practical work far outside a conventional engineering desk. I am strongest where technical structure, human context, and real-world usefulness need to meet.</p>
+        <p>I build and sustain software systems across scientific education, cloud infrastructure, local-first software, public products, and the physical world. I turn ambiguous ideas into durable working systems, with a particular strength for connecting technical structure, human context, and real-world usefulness.</p>
       </div>
     </section>
 
@@ -48,6 +48,19 @@ body_class: resume-page
             <li>Built and maintained cloud control-plane software for Azure VMware Solution.</li>
             <li>Worked on networking provisioning, reliability, performance, diagnostics, and the operational realities of distributed production services.</li>
             <li>Translated complex infrastructure behavior into changes that could be deployed, observed, and supported within a large engineering organization.</li>
+          </ul>
+        </article>
+
+        <article class="resume-role">
+          <header>
+            <div><h3>Computer Science Consultant</h3><p class="resume-org"><a href="https://github.com/geni-act" target="_blank" rel="noopener noreferrer">GENI / GENI-Science / GENI-ACT</a> · Seattle Pacific University and academic collaborators</p></div>
+            <p class="resume-date">2010–2022</p>
+          </header>
+          <p class="resume-role-note">Long-running academic software collaboration, concurrent with later full-time roles.</p>
+          <ul>
+            <li>Collaborated with faculty researchers to develop and sustain genomics education platforms supporting classroom instruction and independent student research.</li>
+            <li>Designed and maintained Ruby on Rails applications and relational databases; resolved user-facing defects, improved configuration and deployment workflows, moved development into GitHub, and delivered beta and production releases.</li>
+            <li>Managed database and instructional infrastructure and helped consolidate GENI-Science and GENI-ACT resources within NSF-supported, multi-institution academic initiatives.</li>
           </ul>
         </article>
 
