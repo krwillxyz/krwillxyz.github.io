@@ -41,13 +41,12 @@ body_class: resume-page
 
         <article class="resume-role">
           <header>
-            <div><h3>Software Engineer, Azure VMware Solution</h3><p class="resume-org">Microsoft</p></div>
-            <p class="resume-date">May 2019–Jan 2025</p>
+            <div><h3>Software Engineer — Azure VMware Solution</h3><p class="resume-org">Microsoft</p></div>
+            <p class="resume-date">May 2019–January 2025</p>
           </header>
           <ul>
-            <li>Built and operated distributed control-plane software for Azure VMware Solution, focused on networking provisioning reliability and performance.</li>
-            <li>Investigated complex production behavior through diagnostics and observability, turning operational evidence into actionable engineering changes.</li>
-            <li>Carried improvements from production investigation through implementation, deployment, observation, and operational support within a large Azure engineering organization.</li>
+            <li>Built and maintained portions of the Azure VMware Solution control plane, with work spanning networking provisioning, reliability, performance, diagnostics, and production support.</li>
+            <li>Contributed across multiple teams and problem areas, translating complex infrastructure behavior into changes that could be deployed, observed, and supported within a large engineering organization.</li>
           </ul>
         </article>
 
