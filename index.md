@@ -18,7 +18,7 @@ bio_image: /assets/images/world-cup-bio.jpg
     <p class="year-mark">{{ site.time | date: "%Y" }}</p>
     <h1 id="page-title">Kristopher Williams</h1>
     <p class="role-line">
-      Tinkerer,
+      <a class="role-link tooltip-link" href="/products/" aria-label="Tinkerer. Things I’ve made.">Tinkerer<span class="tooltip" role="tooltip">Things I’ve made</span></a>,
       <a class="role-link tooltip-link" href="/resume/" aria-label="Thinker. Resume.">Thinker<span class="tooltip" role="tooltip">Resume</span></a>,
       <a class="role-link tooltip-link" href="https://www.instagram.com/krwillxyz/" target="_blank" rel="noopener noreferrer" aria-label="Creator. Visit Instagram.">Creator<span class="tooltip" role="tooltip">Instagram</span></a>,
       <a class="role-link tooltip-link" href="https://driftingforms.com" target="_blank" rel="noopener noreferrer" aria-label="Artist. Check out my artistic side.">Artist<span class="tooltip" role="tooltip">Check out my artistic side</span></a>,
@@ -38,7 +38,6 @@ bio_image: /assets/images/world-cup-bio.jpg
         </span>
       </p>
       <p class="email-line"><a href="mailto:kristopher.williams@fastmail.com">kristopher.williams<wbr>@fastmail.com</a></p>
-      <p><a href="/products/">Products →</a></p>
     </div>
   </div>
 </section>

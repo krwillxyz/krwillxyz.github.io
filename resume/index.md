@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Resume
-description: "Resume and professional context for Kristopher Williams."
+title: Kristopher Williams · Resume
+description: "Software engineer and systems builder working across cloud infrastructure, local-first software, products, and physical computing."
+body_class: resume-page
 ---
 
 <section class="resume-card" aria-labelledby="page-title">
@@ -10,29 +11,87 @@ description: "Resume and professional context for Kristopher Williams."
   <header class="resume-head">
     <p class="resume-kicker">Resume</p>
     <h1 id="page-title">Kristopher Williams</h1>
-    <p class="resume-intro">Engineer, maker, and systems-minded generalist based in Mukilteo, Washington.</p>
-    <p class="resume-contact"><a href="mailto:kristopher.williams@fastmail.com">kristopher.williams<wbr>@fastmail.com</a></p>
+    <p class="resume-intro">Software engineer and systems builder working across cloud infrastructure, local-first software, products, and physical computing.</p>
+    <p class="resume-contact"><span>Mukilteo, Washington</span><span aria-hidden="true"> · </span><a href="mailto:kristopher.williams@fastmail.com">kristopher.williams<wbr>@fastmail.com</a></p>
   </header>
 
   <div class="resume-sections">
     <section>
       <h2>Profile</h2>
-      <p>I build software, creative tools, and durable personal systems. My work tends to sit where technical structure, visual judgment, and long-term usefulness overlap.</p>
+      <div class="resume-copy">
+        <p>I turn ambiguous ideas into durable working systems. My background spans healthcare software, Microsoft Azure, independent products, creative practice, and practical work far outside a conventional engineering desk. I am strongest where technical structure, human context, and real-world usefulness need to meet.</p>
+      </div>
     </section>
 
     <section>
-      <h2>Selected work</h2>
-      <p>This section will hold the strongest proof: shipped systems, meaningful projects, technical leadership, creative work, and the accomplishments worth making easy to find.</p>
+      <h2>Experience</h2>
+      <div class="resume-copy resume-roles">
+        <article class="resume-role">
+          <header>
+            <div><h3>Independent engineer &amp; systems builder</h3><p class="resume-org">Atlas · Page Push · Drifting Forms</p></div>
+            <p class="resume-date">2025–present</p>
+          </header>
+          <ul>
+            <li>Designed and operate Atlas, a local-first information substrate that gives personal records, signals, and ideas durable addresses, provenance, search, and useful interfaces.</li>
+            <li>Shipped <a href="/products/page-push/">Page Push</a>, a privacy-oriented browser extension that sends page context directly to an endpoint chosen by its user.</li>
+            <li>Build physical-computing experiments that join cameras, projectors, sensors, radio, lighting, and software into playful, practical interactions.</li>
+            <li>Develop art and products through <a href="https://driftingforms.com" target="_blank" rel="noopener noreferrer">Drifting Forms</a>, connecting creative practice with small-business operations.</li>
+          </ul>
+        </article>
+
+        <article class="resume-role">
+          <header>
+            <div><h3>Software Engineer, Azure</h3><p class="resume-org">Microsoft</p></div>
+            <p class="resume-date">through Jan 2025</p>
+          </header>
+          <ul>
+            <li>Built and maintained cloud control-plane software for Azure VMware Solution.</li>
+            <li>Worked on networking provisioning, reliability, performance, diagnostics, and the operational realities of distributed production services.</li>
+            <li>Translated complex infrastructure behavior into changes that could be deployed, observed, and supported within a large engineering organization.</li>
+          </ul>
+        </article>
+
+        <article class="resume-role">
+          <header>
+            <div><h3>Software Engineer</h3><p class="resume-org">Cerner, now Oracle Health</p></div>
+            <p class="resume-date">prior experience</p>
+          </header>
+          <ul>
+            <li>Developed healthcare software, including work in the clinical workflow context around CareCompass.</li>
+            <li>Built tools and integrations in an environment where software quality directly supported the work of healthcare professionals.</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <section>
-      <h2>Current interests</h2>
-      <p>Personal infrastructure, human-centered software, AI-assisted creative workflows, practical automation, archives, and tools that remain useful after the novelty wears off.</p>
+      <h2>Range</h2>
+      <div class="resume-copy">
+        <p>Before and between software roles, I worked as a computer lab assistant, a dock hand at Elliott Bay Marina, and during college summers for Trident Seafoods in Alaska. That range still shapes how I approach engineering: understand the environment, respect the people doing the work, and make the system useful outside the diagram.</p>
+      </div>
     </section>
 
     <section>
-      <h2>Availability</h2>
-      <p>Open to the right conversation, especially where engineering judgment, creative systems, and real-world usefulness matter.</p>
+      <h2>Education</h2>
+      <div class="resume-copy">
+        <h3>Software Engineering</h3>
+        <p class="resume-org">Seattle Pacific University · 2012</p>
+        <p>Formal grounding in software design, computer science, and systems thinking, extended through professional work in healthcare and cloud infrastructure.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Strengths</h2>
+      <div class="resume-copy">
+        <p class="resume-strengths"><span>Distributed systems</span><span>Cloud infrastructure</span><span>APIs &amp; integrations</span><span>Reliability &amp; operations</span><span>Local-first software</span><span>AI-assisted systems</span><span>Product prototyping</span><span>Physical computing</span></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Conversation</h2>
+      <div class="resume-copy">
+        <p>Open to work and collaborations where engineering judgment, creative systems, and tangible usefulness matter.</p>
+      </div>
     </section>
   </div>
 </section>
