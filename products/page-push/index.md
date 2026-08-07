@@ -18,7 +18,7 @@ social_image: /assets/products/page-push/social-card-0.1.7.png
         <p class="page-push-slogan">Configure once. Push anywhere.</p>
         <p class="page-push-lede">Push the page you’re viewing directly to your own software. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
         <div class="trust-facts" aria-label="Page Push trust facts"><span>Manual only</span><span>No cloud</span><span>No account</span><span>No analytics</span></div>
-        <a class="release-status" href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store · listing pending</a>
+        <a class="release-status" href="https://chromewebstore.google.com/detail/knilajejnnkcfapaibggchnakannjeda?utm_source=item-share-cb" target="_blank" rel="noreferrer">Get Page Push · Chrome Web Store</a>
       </div>
       <figure class="page-push-demo" aria-label="Page Push direct delivery flow">
         <figcaption>One click. Direct delivery.</figcaption>
@@ -51,6 +51,6 @@ social_image: /assets/products/page-push/social-card-0.1.7.png
       </div>
     </section>
 
-    <footer class="product-footer"><span>Built by Kristopher Williams in Mukilteo, Washington.</span><span class="product-footer-links"><a href="https://chromewebstore.google.com/" target="_blank" rel="noreferrer">Chrome Web Store</a><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></span></footer>
+    <footer class="product-footer"><span>Built by Kristopher Williams in Mukilteo, Washington.</span><span class="product-footer-links"><a href="https://chromewebstore.google.com/detail/knilajejnnkcfapaibggchnakannjeda?utm_source=item-share-cb" target="_blank" rel="noreferrer">Chrome Web Store</a><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></span></footer>
   </article>
 </div>
