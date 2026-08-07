@@ -42,7 +42,7 @@ body_class: resume-page
         <article class="resume-role">
           <header>
             <div><h3>Software Engineer, Azure VMware Solution</h3><p class="resume-org">Microsoft</p></div>
-            <p class="resume-date">2019–Jan 2025</p>
+            <p class="resume-date">May 2019–Jan 2025</p>
           </header>
           <ul>
             <li>Built and operated distributed control-plane software for Azure VMware Solution, focused on networking provisioning reliability and performance.</li>
