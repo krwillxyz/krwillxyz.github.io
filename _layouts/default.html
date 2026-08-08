@@ -16,6 +16,7 @@
       "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"
     ];
     let savedConsent = null;
+    const browserRequestsPrivacy = navigator.globalPrivacyControl === true || navigator.doNotTrack === "1";
 
     try {
       savedConsent = window.localStorage.getItem(consentKey);
@@ -38,6 +39,9 @@
     if (savedConsent === "granted") {
       gtag("consent", "default", grantedAnalytics);
     } else if (savedConsent === "denied") {
+      gtag("consent", "default", deniedByDefault);
+      window[`ga-disable-${measurementId}`] = true;
+    } else if (browserRequestsPrivacy) {
       gtag("consent", "default", deniedByDefault);
       window[`ga-disable-${measurementId}`] = true;
     } else {
@@ -71,7 +75,7 @@
     };
   }());
 
-  if (window.krwillAnalytics.savedConsent !== "denied") {
+  if (!window[`ga-disable-${window.krwillAnalytics.measurementId}`]) {
     window.krwillAnalytics.load();
   }
 </script>

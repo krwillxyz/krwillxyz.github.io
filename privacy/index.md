@@ -22,7 +22,7 @@ body_class: site-document-page
 
   <section class="site-document-section">
     <h2>Your choice</h2>
-    <p>Analytics storage is denied by default for visitors in the European Economic Area, United Kingdom, and Switzerland unless they allow it. Elsewhere, limited analytics may begin when a page loads. Anyone can decline or change the choice at any time through <strong>Analytics choices</strong> at the bottom of every page.</p>
+    <p>Analytics storage is denied by default for visitors in the European Economic Area, United Kingdom, and Switzerland unless they allow it. A browser-level Global Privacy Control or Do Not Track request is also treated as a decline. Elsewhere, limited analytics may begin when a page loads. Anyone can decline or change the choice at any time through <strong>Analytics choices</strong> at the bottom of every page.</p>
     <p>The choice is saved in local browser storage. If analytics is allowed, Google may set first-party cookies beginning with <code>_ga</code>. Explicitly declining disables future Google Analytics requests from this site and removes those cookies where the browser permits it.</p>
   </section>
 
