@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4HXS6DPYT1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4HXS6DPYT1');
+</script>
 {% assign favicon_path = page.favicon | default: '/favicon.ico' %}
 <link rel="icon" href="{{ favicon_path | relative_url }}" sizes="any"{% if page.favicon %} type="image/png"{% endif %}>
 <title>{{ page.title | default: site.title }}</title>
