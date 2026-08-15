@@ -25,7 +25,7 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
           <div class="capture-stack" aria-hidden="true"><span class="capture-band"></span><span class="capture-band"></span><span class="capture-band"></span></div>
           <span class="capture-arrow" aria-hidden="true">→</span>
           <a class="capture-output" href="/assets/products/pageprint/examples/iana-root-zone-database-pageprint.png" target="_blank" rel="noreferrer" aria-label="Open a real 49,621-pixel Pageprint capture of the IANA Root Zone Database"><span class="capture-output-lines"></span></a>
-          <p class="capture-local">Created locally.<br>Downloaded directly.<a href="/assets/products/pageprint/examples/iana-root-zone-database-pageprint.png" target="_blank" rel="noreferrer">See a real capture →</a></p>
+          <p class="capture-local">Created locally.<br>Downloaded directly.<a class="capture-proof-link" href="/assets/products/pageprint/examples/iana-root-zone-database-pageprint.png" target="_blank" rel="noreferrer">Open a real 49,621 px capture ↗</a></p>
         </div>
       </figure>
     </section>
