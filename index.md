@@ -19,7 +19,7 @@ bio_image: /assets/images/world-cup-bio.jpg
     <h1 id="page-title">Kristopher Williams</h1>
     <p class="role-line">
       <a class="role-link tooltip-link" href="/products/" aria-label="Tinkerer. Things I’ve made.">Tinkerer<span class="tooltip" role="tooltip">Things I’ve made</span></a>,
-      <a class="role-link tooltip-link" href="/resume/" aria-label="Thinker. Resume.">Thinker<span class="tooltip" role="tooltip">Resume</span></a>,
+      <span class="role-link tooltip-link" tabindex="0">Thinker<span class="tooltip" role="tooltip">Asking better questions</span></span>,
       <a class="role-link tooltip-link" href="https://www.instagram.com/krwillxyz/" target="_blank" rel="noopener noreferrer" aria-label="Creator. Visit Instagram.">Creator<span class="tooltip" role="tooltip">Instagram</span></a>,
       <a class="role-link tooltip-link" href="https://driftingforms.com" target="_blank" rel="noopener noreferrer" aria-label="Artist. Check out my artistic side.">Artist<span class="tooltip" role="tooltip">Check out my artistic side</span></a>,
       <span class="role-link dad-joke" tabindex="0">Dad<span class="tooltip" role="tooltip">When does a joke become a dad joke? When it becomes apparent.</span></span>

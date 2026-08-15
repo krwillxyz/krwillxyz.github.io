@@ -40,11 +40,11 @@ product_styles: true
 
     <section class="practice-route" aria-labelledby="practice-title">
       <div>
-        <p class="product-kicker">Beyond software</p>
-        <h2 id="practice-title">The work moves between materials.</h2>
+        <p class="product-kicker">The wider practice</p>
+        <h2 id="practice-title">More than software.</h2>
       </div>
       <div class="practice-route-copy">
-        <p>Artwork, physical objects, and current studio work live through Drifting Forms alongside the technology and exploratory work shown here.</p>
+        <p>Artwork, physical objects, and current studio work live through Drifting Forms. These paths lead into that side of the work.</p>
         <div class="practice-route-links"><a href="https://studio.driftingforms.com" target="_blank" rel="noopener noreferrer">Visit the studio ↗</a><a href="https://company.driftingforms.com" target="_blank" rel="noopener noreferrer">About Drifting Forms ↗</a></div>
       </div>
     </section>

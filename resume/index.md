@@ -1,17 +1,19 @@
 ---
 layout: default
-title: Kristopher Williams · Resume
-description: "Software engineer and systems builder working across scientific education, cloud infrastructure, local-first software, products, and physical computing."
+title: Selected Work and Background · Kristopher Williams
+description: "A concise record of selected work, projects, education, and technical range."
 body_class: resume-page
+robots: noindex, follow
+sitemap: false
 ---
 
 <section class="resume-card" aria-labelledby="page-title">
   <a class="back-link" href="/">Back</a>
 
   <header class="resume-head">
-    <p class="resume-kicker">Resume</p>
+    <p class="resume-kicker">Selected work &amp; background</p>
     <h1 id="page-title">Kristopher Williams</h1>
-    <p class="resume-intro">Software engineer and systems builder working across cloud infrastructure, local-first software, products, and physical computing.</p>
+    <p class="resume-intro">A concise record of projects, roles, education, and the technical range behind my current work.</p>
     <p class="resume-contact"><span>Mukilteo, Washington</span><span aria-hidden="true"> · </span><a href="mailto:kristopher.williams@fastmail.com">kristopher.williams<wbr>@fastmail.com</a></p>
   </header>
 
@@ -24,7 +26,7 @@ body_class: resume-page
     </section>
 
     <section>
-      <h2>Experience</h2>
+      <h2>Selected work</h2>
       <div class="resume-copy resume-roles">
         <article class="resume-role">
           <header>
@@ -99,9 +101,9 @@ body_class: resume-page
     </section>
 
     <section>
-      <h2>Conversation</h2>
+      <h2>Current interests</h2>
       <div class="resume-copy">
-        <p>Open to focused product work, technical collaborations, and unusual engineering problems with a clear outcome.</p>
+        <p>Current work centers on independent products, Atlas, physical computing, and collaborations where technical structure can help make an unusual idea real.</p>
       </div>
     </section>
   </div>
