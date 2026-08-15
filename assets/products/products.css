@@ -168,10 +168,15 @@
 }
 
 .pageprint-panel h1 {
-  max-width: 8ch;
-  font-size: clamp(58px, 8vw, 100px);
-  line-height: 0.86;
-  letter-spacing: -0.06em;
+  max-width: none;
+  font-size: clamp(50px, 4.4vw, 56px);
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+}
+
+.pageprint-panel h1 span {
+  display: block;
+  white-space: nowrap;
 }
 
 .pageprint-slogan {
@@ -322,37 +327,6 @@
 
 .pageprint-boundary {
   background: rgba(113, 208, 174, 0.14);
-}
-
-.evidence-strip {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 36px;
-  border: 1px solid rgba(11, 48, 39, 0.16);
-}
-
-.evidence-strip div {
-  padding: 25px;
-  border-right: 1px solid rgba(11, 48, 39, 0.16);
-  background: rgba(255, 250, 240, 0.72);
-}
-
-.evidence-strip div:last-child { border-right: 0; }
-
-.evidence-strip strong,
-.evidence-strip span {
-  display: block;
-}
-
-.evidence-strip strong {
-  color: var(--pageprint-ink);
-  font: 500 clamp(2rem, 5vw, 3.3rem)/1 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-}
-
-.evidence-strip span {
-  margin-top: 8px;
-  color: rgba(11, 48, 39, 0.64);
-  font: 0.78rem/1.45 ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
 
 .page-push-hero {
@@ -880,7 +854,7 @@
   }
 
   .pageprint-panel h1 {
-    font-size: clamp(52px, 16vw, 72px);
+    font-size: clamp(46px, 13vw, 54px);
   }
 
   .capability-grid {
@@ -890,17 +864,6 @@
   .purpose-grid {
     grid-template-columns: 1fr;
   }
-
-  .evidence-strip {
-    grid-template-columns: 1fr;
-  }
-
-  .evidence-strip div {
-    border-right: 0;
-    border-bottom: 1px solid rgba(11, 48, 39, 0.16);
-  }
-
-  .evidence-strip div:last-child { border-bottom: 0; }
 
   .version-row {
     grid-template-columns: 1fr;

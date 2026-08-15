@@ -13,7 +13,7 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
       <div class="pageprint-copy">
         <img class="pageprint-mark" src="/assets/products/pageprint/icon-0.1.14.png" alt="Pageprint">
         <p class="product-kicker">browser extension</p>
-        <h1>One click. The whole page.</h1>
+        <h1><span>One click.</span><span>The whole page.</span></h1>
         <p class="pageprint-slogan">A clean PNG of the page in front of you.</p>
         <p class="pageprint-lede">Pageprint walks an ordinary scrolling webpage, joins what it sees into one image, downloads it to your computer, and puts the page back where you left it.</p>
         <div class="trust-facts" aria-label="Pageprint trust facts"><span>Local capture</span><span>No uploads</span><span>No account</span><span>No analytics</span></div>
@@ -21,7 +21,7 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
       </div>
       <figure class="pageprint-demo" aria-label="Several browser viewports becoming one PNG">
         <div class="capture-diagram">
-          <figcaption class="capture-diagram-label">The page becomes one file</figcaption>
+          <figcaption class="capture-diagram-label">The whole page becomes one image</figcaption>
           <div class="capture-stack" aria-hidden="true"><span class="capture-band"></span><span class="capture-band"></span><span class="capture-band"></span></div>
           <span class="capture-arrow" aria-hidden="true">→</span>
           <div class="capture-output" aria-hidden="true"><div class="capture-output-lines"></div></div>
@@ -49,11 +49,6 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
         <div><b>What stays local</b><p>Page content, page URLs, intermediate captures, stitching, usage state, and the finished screenshot remain in your browser and on your computer.</p></div>
         <div><b>Where it stops</b><p>Infinite feeds, virtualized or nested-scroll apps, WebGL experiences, video, and rapidly changing pages may fail or produce a clearly labeled best attempt.</p></div>
         <div><b>How it will launch</b><p>The first 25 successful captures are free. Unlimited capture is planned as a $4.99 one-time purchase after checkout and license proof are complete.</p></div>
-      </div>
-      <div class="evidence-strip" aria-label="Pageprint validation results">
-        <div><strong>90%</strong><span>A or B on the fresh frozen-engine holdout</span></div>
-        <div><strong>80%</strong><span>Clean A results on unseen ordinary pages</span></div>
-        <div><strong>0</strong><span>Silent contradictions in the validated holdout</span></div>
       </div>
     </section>
 
