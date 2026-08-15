@@ -29,9 +29,9 @@ body_class: home
         <span><strong>Studio</strong><small>Artwork, objects, and current practice.</small></span>
         <i aria-hidden="true">↗</i>
       </a>
-      <a href="https://www.instagram.com/krwillxyz/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/krwillxyz/" target="_blank" rel="noopener noreferrer" aria-label="Fragments on Instagram">
         <span class="name-home-number">03</span>
-        <span><strong>Fragments</strong><small>Ideas, experiments, and things in progress.</small></span>
+        <span><strong>Fragments</strong><small>Process, experiments, and things along the way. Instagram</small></span>
         <i aria-hidden="true">↗</i>
       </a>
       <a href="/background/">
