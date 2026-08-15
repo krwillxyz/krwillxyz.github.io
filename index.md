@@ -14,12 +14,12 @@ body_class: home
 
   <div class="name-home-body">
     <div class="name-home-facts" aria-label="About Kristopher Williams">
-      <p class="name-home-statement">Artist. Engineer.<br>Founder of <a href="https://company.driftingforms.com" target="_blank" rel="noopener noreferrer">Drifting Forms</a>.</p>
+      <p class="name-home-statement">Artist. Engineer.<br><span class="name-home-founder">Founder of <a href="https://company.driftingforms.com" target="_blank" rel="noopener noreferrer">Drifting Forms</a>.</span></p>
       <p class="name-home-place">Mukilteo, Washington, USA</p>
     </div>
 
     <nav class="name-home-paths" aria-label="Explore Kristopher Williams's work">
-      <a href="/products/">
+      <a href="/work/">
         <span class="name-home-number">01</span>
         <span><strong>Work</strong><small>Things I’ve made and released.</small></span>
         <i aria-hidden="true">→</i>

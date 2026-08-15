@@ -899,28 +899,6 @@
     box-shadow: 0 28px 90px rgba(24, 33, 38, 0.14);
   }
 
-  .name-home::before {
-    content: "";
-    position: absolute;
-    top: 49.5%;
-    left: 51.5%;
-    width: 34px;
-    height: 9px;
-    border-bottom: 1.5px solid rgba(185, 68, 46, 0.78);
-    border-radius: 0 0 58% 42%;
-    transform: rotate(-7deg);
-  }
-
-  .name-home::after {
-    content: "";
-    position: absolute;
-    top: calc(49.5% + 9px);
-    left: calc(51.5% + 21px);
-    width: 13px;
-    border-top: 1px solid rgba(185, 68, 46, 0.58);
-    transform: rotate(15deg);
-  }
-
   .name-home-head,
   .name-home-body,
   .name-home-contact {
@@ -977,10 +955,10 @@
 
   .name-home-body {
     display: grid;
-    grid-template-columns: minmax(230px, 0.72fr) minmax(380px, 1fr);
-    gap: clamp(80px, 15vw, 210px);
+    grid-template-columns: minmax(270px, 0.56fr) minmax(0, 1.44fr);
+    gap: clamp(42px, 5vw, 72px);
     align-items: end;
-    padding: clamp(72px, 9vw, 122px) 0 clamp(42px, 5vw, 62px);
+    padding: clamp(44px, 5vw, 70px) 0 clamp(42px, 5vw, 62px);
   }
 
   .name-home-facts {
@@ -1007,7 +985,12 @@
     text-transform: uppercase;
   }
 
+  .name-home-founder {
+    white-space: nowrap;
+  }
+
   .name-home-paths {
+    align-self: start;
     border-bottom: 1px solid rgba(24, 33, 38, 0.17);
   }
 
@@ -1177,11 +1160,6 @@
   }
 
   @media (max-width: 900px) {
-    .name-home::before,
-    .name-home::after {
-      display: none;
-    }
-
     .name-home {
       grid-template-rows: auto auto auto;
       min-height: 0;
@@ -1253,13 +1231,6 @@
       padding: 30px 22px 32px;
       border: 0;
       box-shadow: none;
-    }
-
-    .name-home::before {
-      top: 39%;
-      left: auto;
-      right: 28px;
-      opacity: 0.65;
     }
 
     .name-home-reference {
@@ -1509,7 +1480,7 @@
     <nav class="site-footer-links" aria-label="krwill.xyz site links">
       <span class="site-footer-context">Site</span>
       {% unless page.body_class == 'home' %}
-      <a href="/products/">Products</a>
+      <a href="/work/">Work</a>
       <a href="https://studio.driftingforms.com" target="_blank" rel="noopener noreferrer">Studio</a>
       {% endunless %}
       <a href="/privacy/">Site privacy</a>

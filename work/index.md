@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Useful Software by Kristopher Williams
+title: Work · Kristopher Williams
 description: "A current shelf of public software from Kristopher Williams's broader creative practice."
 body_class: product-site product-directory-page
 product_styles: true
