@@ -15,9 +15,8 @@ sitemap: false
 
   <div class="name-home-body">
     <div class="name-home-facts" aria-label="About Kristopher Williams">
-      <p>Artist · Engineer</p>
-      <p>Founder, <a href="https://company.driftingforms.com" target="_blank" rel="noopener noreferrer">Drifting Forms</a></p>
-      <p>Mukilteo, Washington, USA</p>
+      <p class="name-home-statement">Artist. Engineer.<br>Founder of <a href="https://company.driftingforms.com" target="_blank" rel="noopener noreferrer">Drifting Forms</a>.</p>
+      <p class="name-home-place">Mukilteo, Washington, USA</p>
     </div>
 
     <nav class="name-home-paths" aria-label="Explore Kristopher Williams's work">
@@ -46,5 +45,6 @@ sitemap: false
 
   <footer class="name-home-contact">
     <a href="mailto:kristopher.williams@fastmail.com">Email Kristopher</a>
+    <span>You can call me Kris.</span>
   </footer>
 </section>
