@@ -356,58 +356,34 @@
     font-weight: 520;
   }
 
-  .identity-location {
-    border: 1px solid var(--rule);
-    background: rgba(250, 247, 239, 0.62);
-  }
-
-  .identity-location summary {
+  .identity-place {
     position: relative;
     display: grid;
     gap: 2px;
-    padding: 11px 38px 11px 32px;
-    cursor: pointer;
-    list-style: none;
+    width: max-content;
+    max-width: 100%;
+    padding-left: 20px;
+    text-decoration: none;
   }
 
-  .identity-location summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .identity-location summary::before {
+  .identity-place::before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 13px;
+    top: 7px;
+    left: 1px;
     width: 8px;
     height: 8px;
     border: 2px solid #087982;
     border-radius: 50%;
-    transform: translateY(-50%);
   }
 
-  .identity-location summary::after {
-    content: "+";
-    position: absolute;
-    top: 50%;
-    right: 13px;
-    color: var(--ink-soft);
-    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
-    font-size: 0.9rem;
-    transform: translateY(-50%);
-  }
-
-  .identity-location[open] summary::after {
-    content: "−";
-  }
-
-  .identity-location summary span {
+  .identity-place span {
     color: var(--ink);
     font-size: 0.86rem;
     font-weight: 620;
   }
 
-  .identity-location summary small {
+  .identity-place small {
     color: var(--ink-faint);
     font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
     font-size: 0.59rem;
@@ -416,43 +392,9 @@
     text-transform: uppercase;
   }
 
-  .identity-map {
-    padding: 0 10px 10px;
-  }
-
-  .identity-map iframe {
-    display: block;
-    width: 100%;
-    height: 156px;
-    border: 1px solid var(--rule);
-    background: var(--fog);
-    filter: saturate(0.78) contrast(0.94);
-  }
-
-  .identity-map-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 6px 12px;
-    padding: 9px 2px 0;
-  }
-
-  .identity-map-actions button {
-    padding: 0;
-    border: 0;
-    border-bottom: 1px solid rgba(36, 39, 41, 0.28);
-    background: transparent;
-    color: var(--ink);
-    cursor: pointer;
-    font: inherit;
-    font-size: 0.72rem;
-    font-weight: 680;
-  }
-
-  .identity-map-actions output {
-    color: var(--ink-faint);
-    font-size: 0.67rem;
-    line-height: 1.35;
+  .identity-place:hover small,
+  .identity-place:focus-visible small {
+    color: var(--ink-soft);
   }
 
   .identity-email {
@@ -1090,49 +1032,6 @@
     image.addEventListener("dragstart", (event) => event.preventDefault());
     image.addEventListener("contextmenu", (event) => event.preventDefault());
   });
-
-  (function () {
-    const location = document.getElementById("identity-location");
-    const frame = location?.querySelector("iframe[data-src]");
-    const button = document.getElementById("distance-from-mukilteo");
-    const result = document.getElementById("distance-from-mukilteo-result");
-
-    if (!location || !frame || !button || !result) return;
-
-    location.addEventListener("toggle", () => {
-      if (location.open && !frame.hasAttribute("src")) frame.src = frame.dataset.src;
-    }, { once: true });
-
-    button.addEventListener("click", () => {
-      if (!navigator.geolocation) {
-        result.textContent = "Location is not available in this browser.";
-        return;
-      }
-
-      result.textContent = "Finding the distance…";
-      navigator.geolocation.getCurrentPosition(({ coords }) => {
-        const toRadians = (degrees) => degrees * Math.PI / 180;
-        const mukilteo = { latitude: 47.9445, longitude: -122.3046 };
-        const latitudeDelta = toRadians(mukilteo.latitude - coords.latitude);
-        const longitudeDelta = toRadians(mukilteo.longitude - coords.longitude);
-        const latitudeA = toRadians(coords.latitude);
-        const latitudeB = toRadians(mukilteo.latitude);
-        const a = Math.sin(latitudeDelta / 2) ** 2
-          + Math.cos(latitudeA) * Math.cos(latitudeB) * Math.sin(longitudeDelta / 2) ** 2;
-        const kilometers = 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        const miles = kilometers * 0.621371;
-        const roundedMiles = miles < 10 ? miles.toFixed(1) : Math.round(miles).toLocaleString();
-        const roundedKilometers = kilometers < 10 ? kilometers.toFixed(1) : Math.round(kilometers).toLocaleString();
-        result.textContent = `About ${roundedMiles} mi (${roundedKilometers} km) from Mukilteo.`;
-      }, () => {
-        result.textContent = "No location shared.";
-      }, {
-        enableHighAccuracy: false,
-        maximumAge: 300000,
-        timeout: 10000
-      });
-    });
-  }());
 
   (function () {
     const analytics = window.krwillAnalytics;

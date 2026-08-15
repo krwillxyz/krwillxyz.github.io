@@ -27,11 +27,6 @@ body_class: site-document-page
   </section>
 
   <section class="site-document-section">
-    <h2>Map and distance</h2>
-    <p>The homepage does not load its OpenStreetMap view until it is opened. Opening it makes an ordinary request to OpenStreetMap, which receives the network information needed to serve the map. Choosing <strong>How far from you?</strong> separately asks the browser for location permission. If allowed, the coordinates are used only in that page to calculate an approximate straight-line distance to Mukilteo; they are not stored, sent to me, or included in site analytics.</p>
-  </section>
-
-  <section class="site-document-section">
     <h2>Who receives the data</h2>
     <p>Analytics information is processed by Google under its <a href="https://policies.google.com/privacy">privacy policy</a>. This site is hosted through GitHub Pages, so ordinary web requests also pass through GitHub infrastructure under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
   </section>

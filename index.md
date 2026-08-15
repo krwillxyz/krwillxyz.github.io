@@ -26,20 +26,10 @@ bio_image: /assets/images/world-cup-bio.jpg
     <p class="identity-intro">I make software, artwork, and physical experiments—usually by following an interesting idea until it becomes real.</p>
 
     <div class="identity-facts" aria-label="Identity details">
-      <details class="identity-location" id="identity-location">
-        <summary><span>Mukilteo, Washington</span><small>Map · distance from you</small></summary>
-        <div class="identity-map">
-          <iframe
-            title="Map showing Mukilteo, Washington, north of Seattle"
-            data-src="https://www.openstreetmap.org/export/embed.html?bbox=-122.521%2C47.548%2C-122.189%2C48.010&amp;layer=mapnik&amp;marker=47.9445%2C-122.3046"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div class="identity-map-actions">
-            <button type="button" id="distance-from-mukilteo">How far from you?</button>
-            <output id="distance-from-mukilteo-result" aria-live="polite">Location is used once, here in your browser.</output>
-          </div>
-        </div>
-      </details>
+      <a class="identity-place" href="https://www.openstreetmap.org/?mlat=47.9445&amp;mlon=-122.3046#map=10/47.9445/-122.3046" target="_blank" rel="noopener noreferrer">
+        <span>Mukilteo, Washington, USA</span>
+        <small>On Puget Sound, just north of Seattle ↗</small>
+      </a>
       <p class="identity-email"><a href="mailto:kristopher.williams@fastmail.com">Email me</a></p>
     </div>
 
