@@ -268,6 +268,15 @@
     line-height: 1.42;
   }
 
+  .identity-intro {
+    max-width: 42ch;
+    margin: 18px 0 0;
+    color: rgba(36, 39, 41, 0.66);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
   a {
     color: inherit;
     text-decoration-color: rgba(36, 39, 41, 0.28);
@@ -341,7 +350,7 @@
   }
 
   .identity-facts {
-    margin: clamp(28px, 5vw, 50px) 0 0;
+    margin: clamp(22px, 4vw, 36px) 0 0;
     display: grid;
     gap: 10px;
     color: rgba(36, 39, 41, 0.7);
@@ -356,6 +365,60 @@
     margin: 0;
     min-width: 0;
     overflow-wrap: break-word;
+  }
+
+  .identity-paths {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    margin-top: 20px;
+    border: 1px solid var(--rule);
+    background: var(--rule);
+  }
+
+  .identity-paths a {
+    position: relative;
+    min-width: 0;
+    padding: 13px 34px 13px 13px;
+    background: rgba(250, 247, 239, 0.82);
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .identity-paths span,
+  .identity-paths strong {
+    display: block;
+  }
+
+  .identity-paths span {
+    margin-bottom: 4px;
+    color: #087982;
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 0.61rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .identity-paths strong {
+    font-size: 0.76rem;
+    line-height: 1.3;
+  }
+
+  .identity-paths i {
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    font-style: normal;
+    transform: translateY(-50%);
+    transition: transform 0.16s ease;
+  }
+
+  .identity-paths a:hover i,
+  .identity-paths a:focus-visible i {
+    transform: translate(3px, -50%);
   }
 
   .identity-facts a {
@@ -836,6 +899,36 @@
     width: min(1076px, calc(100% - 36px));
   }
 
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home main {
+    min-height: 0;
+    width: min(836px, calc(100% - 36px));
+    margin-top: auto;
+    padding: 0;
+  }
+
+  .home .site-footer {
+    width: min(836px, calc(100% - 36px));
+    margin: 0 auto auto;
+    border-color: var(--rule);
+    border-top: 0;
+    background: rgba(250, 247, 239, 0.9);
+    box-shadow: var(--shadow);
+    color: var(--ink-soft);
+  }
+
+  .home .site-footer-brand {
+    color: var(--ink);
+  }
+
+  .home .site-footer-context {
+    color: #087982;
+  }
+
   @media (min-width: 780px) {
     .identity-card {
       grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
@@ -888,6 +981,8 @@
 
     .home main {
       display: block;
+      width: 100%;
+      margin: 0;
       padding: 0;
     }
 
@@ -895,6 +990,16 @@
       min-height: 100vh;
       border: 0;
       box-shadow: none;
+    }
+
+    .home .site-footer {
+      width: 100%;
+      margin: 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .identity-paths {
+      grid-template-columns: 1fr;
     }
 
     .resume-sections section {
@@ -1023,6 +1128,7 @@
       <span class="site-footer-context">Site</span>
       <a href="/products/">Products</a>
       <a href="/resume/">Résumé</a>
+      <a href="https://studio.driftingforms.com" target="_blank" rel="noopener noreferrer">Studio</a>
       <a href="/privacy/">Site privacy</a>
       <button type="button" id="analytics-choices">Analytics choices</button>
     </nav>

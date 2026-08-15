@@ -24,6 +24,7 @@ bio_image: /assets/images/world-cup-bio.jpg
       <a class="role-link tooltip-link" href="https://driftingforms.com" target="_blank" rel="noopener noreferrer" aria-label="Artist. Check out my artistic side.">Artist<span class="tooltip" role="tooltip">Check out my artistic side</span></a>,
       <span class="role-link dad-joke" tabindex="0">Dad<span class="tooltip" role="tooltip">When does a joke become a dad joke? When it becomes apparent.</span></span>
     </p>
+    <p class="identity-intro">I work across software, systems, artwork, and physical experiments—following useful or interesting ideas until they become real.</p>
 
     <div class="identity-facts" aria-label="Identity details">
       <p class="location-field">
@@ -39,5 +40,10 @@ bio_image: /assets/images/world-cup-bio.jpg
       </p>
       <p class="email-line"><a href="mailto:kristopher.williams@fastmail.com">kristopher.williams<wbr>@fastmail.com</a></p>
     </div>
+
+    <nav class="identity-paths" aria-label="Explore Kristopher Williams's work">
+      <a href="/products/"><span>Digital work</span><strong>Products &amp; experiments</strong><i aria-hidden="true">→</i></a>
+      <a href="https://studio.driftingforms.com" target="_blank" rel="noopener noreferrer"><span>Physical work</span><strong>Artwork &amp; studio</strong><i aria-hidden="true">↗</i></a>
+    </nav>
   </div>
 </section>
