@@ -17,15 +17,15 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
         <p class="pageprint-slogan">A clean PNG of the page in front of you.</p>
         <p class="pageprint-lede">Pageprint walks an ordinary scrolling webpage, joins what it sees into one image, downloads it to your computer, and puts the page back where you left it.</p>
         <div class="trust-facts" aria-label="Pageprint trust facts"><span>Local capture</span><span>No uploads</span><span>No account</span><span>No analytics</span></div>
-        <span class="release-status pageprint-status">Validated release candidate · coming soon</span>
+        <span class="release-status pageprint-status">Chrome Web Store · coming soon</span>
       </div>
       <figure class="pageprint-demo" aria-label="Several browser viewports becoming one PNG">
         <div class="capture-diagram">
           <figcaption class="capture-diagram-label">The whole page becomes one image</figcaption>
           <div class="capture-stack" aria-hidden="true"><span class="capture-band"></span><span class="capture-band"></span><span class="capture-band"></span></div>
           <span class="capture-arrow" aria-hidden="true">→</span>
-          <div class="capture-output" aria-hidden="true"><div class="capture-output-lines"></div></div>
-          <p class="capture-local">Created locally.<br>Downloaded directly.</p>
+          <a class="capture-output" href="/assets/products/pageprint/examples/iana-root-zone-database-pageprint.png" target="_blank" rel="noreferrer" aria-label="Open a real 49,621-pixel Pageprint capture of the IANA Root Zone Database"><span class="capture-output-lines"></span></a>
+          <p class="capture-local">Created locally.<br>Downloaded directly.<a href="/assets/products/pageprint/examples/iana-root-zone-database-pageprint.png" target="_blank" rel="noreferrer">See a real capture →</a></p>
         </div>
       </figure>
     </section>
@@ -35,7 +35,7 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
       <h2 id="capture-title">A browser capability that feels like it should already exist.</h2>
       <div class="capability-grid">
         <div><b>01</b><p>Click once to capture the full vertical document.</p></div>
-        <div><b>02</b><p>See fixed and sticky page controls once, not in every segment.</p></div>
+        <div><b>02</b><p>Fixed headers appear once, not throughout the final image.</p></div>
         <div><b>03</b><p>Cancel with Escape or a second click without consuming a capture.</p></div>
         <div><b>04</b><p>Return to the page and scroll position you started from.</p></div>
       </div>
@@ -52,6 +52,6 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
       </div>
     </section>
 
-    <footer class="product-footer"><span>Built by Kristopher Williams in Mukilteo, Washington.</span><span class="product-footer-links"><a href="/products/pageprint/privacy/">Privacy</a><a href="/products/pageprint/support/">Support</a><a href="/products/pageprint/changelog/">Changelog</a></span></footer>
+    <footer class="product-footer"><span class="product-attribution">Built by <a href="/">Kristopher Williams</a> in Mukilteo, Washington. <a href="https://company.driftingforms.com/">A Drifting Forms product.</a></span><span class="product-footer-links"><a href="/products/pageprint/privacy/">Privacy</a><a href="/products/pageprint/support/">Support</a><a href="/products/pageprint/changelog/">Changelog</a></span></footer>
   </article>
 </div>
