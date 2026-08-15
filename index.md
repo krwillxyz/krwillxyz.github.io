@@ -15,7 +15,7 @@ bio_image: /assets/images/world-cup-bio.jpg
     </div>
     <div class="personal-intro">
       <p class="personal-thesis">I follow interesting ideas until they become something I can use, see, or share.</p>
-      <p class="personal-range">Sometimes that means software. Sometimes artwork, a physical object, or a room that behaves differently.</p>
+      <p class="personal-range">I’m an artist and engineer in Mukilteo, Washington, and the founder of <a href="https://company.driftingforms.com" target="_blank" rel="noopener noreferrer">Drifting Forms</a>.</p>
     </div>
   </header>
 
@@ -32,13 +32,12 @@ bio_image: /assets/images/world-cup-bio.jpg
       <div class="personal-note">
         <p class="personal-note-label">A practice in motion</p>
         <p class="personal-facets">
-          <a href="/products/">Tinkerer</a>
-          <a href="/resume/">Thinker</a>
-          <a href="https://www.instagram.com/krwillxyz/" target="_blank" rel="noopener noreferrer">Creator</a>
           <a href="https://studio.driftingforms.com" target="_blank" rel="noopener noreferrer">Artist</a>
+          <a href="/resume/">Engineer</a>
+          <a href="/products/">Maker</a>
           <span>Dad</span>
         </p>
-        <p class="personal-note-copy">This is the personal side of the work: unfinished questions, useful tools, strange prototypes, and the paths they open.</p>
+        <p class="personal-note-copy">Sometimes that means software. Sometimes artwork, a physical object, or a room that behaves differently.</p>
       </div>
 
       <nav class="personal-paths" aria-label="Explore Kristopher Williams's work">
@@ -61,6 +60,7 @@ bio_image: /assets/images/world-cup-bio.jpg
 
       <div class="personal-contact">
         <a href="mailto:kristopher.williams@fastmail.com">Email me</a>
+        <a href="/resume/">Selected work &amp; background →</a>
       </div>
     </div>
   </div>

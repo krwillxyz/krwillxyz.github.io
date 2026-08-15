@@ -30,10 +30,10 @@ sitemap: false
       <div class="resume-copy resume-roles">
         <article class="resume-role">
           <header>
-            <div><h3>Independent engineer &amp; systems builder</h3><p class="resume-org">Atlas · Page Push · Drifting Forms</p></div>
+            <div><h3>Independent engineer, artist &amp; systems builder</h3><p class="resume-org">Founder, Drifting Forms LLC · Atlas · Pageprint · Page Push</p></div>
             <p class="resume-date">2025–present</p>
           </header>
-          <p class="resume-role-note">Extracting focused public products from a long-running personal systems platform.</p>
+          <p class="resume-role-note">Building an independent practice across software, systems, physical interfaces, and studio work.</p>
           <ul>
             <li>Build and operate Atlas, an evolving local-first personal system I use to give records, signals, and ideas durable addresses, provenance, search, and useful interfaces.</li>
             <li>Published <a href="/products/page-push/">Page Push</a>, a privacy-oriented Chrome extension that sends page context directly to a user-chosen HTTPS endpoint.</li>
