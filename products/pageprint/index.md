@@ -52,6 +52,6 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
       </div>
     </section>
 
-    <footer class="product-footer"><span class="product-attribution">Built by <a href="/">Kristopher Williams</a> in Mukilteo, Washington. <a href="https://company.driftingforms.com/">A Drifting Forms product.</a></span><span class="product-footer-links"><a href="/products/pageprint/privacy/">Privacy</a><a href="/products/pageprint/support/">Support</a><a href="/products/pageprint/changelog/">Changelog</a></span></footer>
+    <footer class="product-footer"><span><strong class="product-footer-context">Pageprint extension</strong> · <a href="https://company.driftingforms.com/">A Drifting Forms product.</a></span><nav class="product-footer-links" aria-label="Pageprint extension links"><a href="/products/pageprint/privacy/">Extension privacy</a><a href="/products/pageprint/support/">Support</a><a href="/products/pageprint/changelog/">Changelog</a></nav></footer>
   </article>
 </div>

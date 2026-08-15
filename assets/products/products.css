@@ -218,13 +218,13 @@
 .capture-diagram {
   position: relative;
   width: min(430px, 100%);
-  min-height: 450px;
+  min-height: 520px;
 }
 
 .capture-diagram-label {
   margin: 0 0 24px;
   color: var(--pageprint-mint);
-  font: 850 0.72rem/1 ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font: 850 0.82rem/1.2 ui-monospace, "SFMono-Regular", Menlo, monospace;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
@@ -279,7 +279,7 @@
 .capture-output {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 88px;
   width: 42%;
   min-height: 224px;
   padding: 20px 17px;
@@ -322,11 +322,14 @@
 
 .capture-local {
   position: absolute;
-  right: 0;
-  bottom: -38px;
+  right: auto;
+  bottom: 0;
+  left: 0;
   margin: 0;
-  color: rgba(215, 247, 232, 0.72);
-  font: 0.82rem/1.45 Georgia, serif;
+  color: var(--pageprint-mint);
+  font: 850 0.82rem/1.45 ui-monospace, "SFMono-Regular", Menlo, monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .capture-proof-link {
@@ -636,6 +639,12 @@
   gap: 16px;
 }
 
+.product-footer-context {
+  color: rgba(23, 33, 29, 0.78);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .product-attribution a {
   color: inherit;
   text-underline-offset: 3px;
@@ -830,13 +839,13 @@
   }
 
   .pageprint-demo {
-    min-height: 520px;
+    min-height: 590px;
     padding: 34px 22px 56px;
   }
 
   .capture-diagram {
     width: min(400px, 100%);
-    min-height: 430px;
+    min-height: 500px;
   }
 
   .capture-stack {

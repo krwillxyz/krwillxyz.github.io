@@ -51,6 +51,6 @@ social_image: /assets/products/page-push/social-card-0.1.7.png
       </div>
     </section>
 
-    <footer class="product-footer"><span>Built by Kristopher Williams in Mukilteo, Washington.</span><span class="product-footer-links"><a href="https://chromewebstore.google.com/detail/knilajejnnkcfapaibggchnakannjeda?utm_source=item-share-cb" target="_blank" rel="noreferrer">Chrome Web Store</a><a href="/products/page-push/privacy/">Privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></span></footer>
+    <footer class="product-footer"><strong class="product-footer-context">Page Push extension</strong><nav class="product-footer-links" aria-label="Page Push extension links"><a href="https://chromewebstore.google.com/detail/knilajejnnkcfapaibggchnakannjeda?utm_source=item-share-cb" target="_blank" rel="noreferrer">Chrome Web Store</a><a href="/products/page-push/privacy/">Extension privacy</a><a href="/products/page-push/support/">Support</a><a href="/products/page-push/changelog/">Changelog</a></nav></footer>
   </article>
 </div>

@@ -661,7 +661,7 @@
 
   .site-document-card a,
   .analytics-consent a,
-  .privacy-controls a {
+  .site-footer a {
     color: inherit;
     text-underline-offset: 3px;
   }
@@ -697,25 +697,62 @@
     padding-left: 1.15rem;
   }
 
-  .privacy-controls {
-    position: fixed;
-    z-index: 20;
-    right: 14px;
-    bottom: 14px;
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    padding: 7px 9px;
-    border: 1px solid rgba(36, 39, 41, 0.18);
-    border-radius: 999px;
-    background: rgba(250, 247, 239, 0.94);
-    box-shadow: 0 8px 28px rgba(36, 39, 41, 0.12);
-    color: var(--ink-soft);
-    font-size: 0.68rem;
-    backdrop-filter: blur(10px);
+  .site-footer {
+    position: relative;
+    z-index: 2;
+    width: min(980px, calc(100% - 36px));
+    margin: -40px auto 32px;
+    border: 1px solid rgba(250, 247, 239, 0.16);
+    background: rgba(36, 39, 41, 0.96);
+    box-shadow: 0 18px 48px rgba(36, 39, 41, 0.16);
+    color: rgba(250, 247, 239, 0.72);
   }
 
-  .privacy-controls button {
+  .site-footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px 36px;
+    padding: 20px 24px;
+  }
+
+  .site-footer-identity {
+    display: grid;
+    gap: 4px;
+  }
+
+  .site-footer-brand {
+    width: max-content;
+    color: var(--paper-warm);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    text-decoration: none;
+  }
+
+  .site-footer-note,
+  .site-footer-links {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    line-height: 1.4;
+  }
+
+  .site-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 16px;
+  }
+
+  .site-footer-context {
+    color: rgba(113, 208, 174, 0.9);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .site-footer-links button {
     padding: 0;
     border: 0;
     background: transparent;
@@ -795,9 +832,8 @@
     color: var(--ink);
   }
 
-  body:has(.analytics-consent:not([hidden])) .privacy-controls {
-    opacity: 0;
-    pointer-events: none;
+  .product-site .site-footer {
+    width: min(1076px, calc(100% - 36px));
   }
 
   @media (min-width: 780px) {
@@ -917,9 +953,23 @@
       margin-top: 6px;
     }
 
-    .privacy-controls {
-      right: 10px;
-      bottom: 10px;
+    .site-footer,
+    .product-site .site-footer {
+      width: 100%;
+      margin: 0;
+      border-right: 0;
+      border-bottom: 0;
+      border-left: 0;
+      box-shadow: none;
+    }
+
+    .site-footer-inner {
+      align-items: flex-start;
+      padding: 22px;
+    }
+
+    .site-footer-links {
+      width: 100%;
     }
   }
 
@@ -931,7 +981,7 @@
     body::before,
     .back-link,
     .analytics-consent,
-    .privacy-controls {
+    .site-footer {
       display: none;
     }
 
@@ -963,10 +1013,21 @@
     <button class="analytics-consent-decline" type="button" data-analytics-consent="denied">Decline</button>
   </div>
 </aside>
-<nav class="privacy-controls" aria-label="Privacy controls">
-  <a href="/privacy/">Site privacy</a>
-  <button type="button" id="analytics-choices">Analytics choices</button>
-</nav>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-identity">
+      <a class="site-footer-brand" href="/">krwill.xyz</a>
+      <span class="site-footer-note">Kristopher Williams · Mukilteo, Washington</span>
+    </div>
+    <nav class="site-footer-links" aria-label="krwill.xyz site links">
+      <span class="site-footer-context">Site</span>
+      <a href="/products/">Products</a>
+      <a href="/resume/">Résumé</a>
+      <a href="/privacy/">Site privacy</a>
+      <button type="button" id="analytics-choices">Analytics choices</button>
+    </nav>
+  </div>
+</footer>
 <script>
   document.querySelectorAll(".identity-photo img").forEach((image) => {
     image.addEventListener("dragstart", (event) => event.preventDefault());
@@ -977,6 +1038,7 @@
     const analytics = window.krwillAnalytics;
     const panel = document.getElementById("analytics-consent");
     const choices = document.getElementById("analytics-choices");
+    let restoreChoiceFocus = false;
 
     if (!analytics || !panel || !choices) return;
 
@@ -1009,7 +1071,8 @@
         analytics.load();
       }
       panel.hidden = true;
-      choices.focus();
+      if (restoreChoiceFocus) choices.focus();
+      restoreChoiceFocus = false;
     };
 
     panel.querySelectorAll("[data-analytics-consent]").forEach((button) => {
@@ -1017,6 +1080,7 @@
     });
 
     choices.addEventListener("click", () => {
+      restoreChoiceFocus = true;
       panel.hidden = false;
       panel.querySelector("button").focus();
     });
@@ -1024,7 +1088,8 @@
     panel.addEventListener("keydown", (event) => {
       if (event.key !== "Escape") return;
       panel.hidden = true;
-      choices.focus();
+      if (restoreChoiceFocus) choices.focus();
+      restoreChoiceFocus = false;
     });
 
     if (!analytics.savedConsent) panel.hidden = false;
