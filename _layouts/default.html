@@ -770,15 +770,23 @@
     gap: 4px;
   }
 
-  .site-footer-brand {
-    width: max-content;
+  .site-footer-established {
     color: var(--paper-warm);
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.05rem;
+    font-size: 0.96rem;
+    letter-spacing: 0.01em;
+  }
+
+  .site-footer-brand {
+    width: max-content;
+    color: rgba(250, 247, 239, 0.56);
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 0.61rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
     text-decoration: none;
   }
 
-  .site-footer-note,
   .site-footer-links {
     font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
     font-size: 0.67rem;
@@ -941,6 +949,8 @@
     font-size: clamp(5rem, 11.4vw, 10.6rem);
     line-height: 0.76;
     letter-spacing: -0.066em;
+    -webkit-user-select: none;
+    user-select: none;
   }
 
   .name-home h1 span {
@@ -1103,15 +1113,15 @@
   }
 
   .home .site-footer-brand {
+    color: var(--ink-faint);
+  }
+
+  .home .site-footer-established {
     color: var(--ink);
   }
 
   .home .site-footer-context {
     color: #087982;
-  }
-
-  .home .site-footer-note {
-    display: none;
   }
 
   .home .analytics-consent {
@@ -1238,7 +1248,7 @@
       font-size: 0.57rem;
     }
 
-    .name-home-reference span {
+    .name-home-home-link {
       display: none;
     }
 
@@ -1474,8 +1484,8 @@
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div class="site-footer-identity">
+      <span class="site-footer-established">Established 1987</span>
       <a class="site-footer-brand" href="/">krwill.xyz</a>
-      <span class="site-footer-note">Kristopher Williams · Mukilteo, Washington</span>
     </div>
     <nav class="site-footer-links" aria-label="krwill.xyz site links">
       <span class="site-footer-context">Site</span>

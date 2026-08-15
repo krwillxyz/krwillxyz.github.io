@@ -8,7 +8,7 @@ body_class: home
 
 <section class="name-home" aria-labelledby="page-title">
   <header class="name-home-head">
-    <p class="name-home-reference"><span>krwill.xyz</span><a href="https://www.openstreetmap.org/?mlat=47.9445&amp;mlon=-122.3046#map=10/47.9445/-122.3046" target="_blank" rel="noopener noreferrer">47.9445° N · 122.3046° W <i aria-hidden="true">↗</i></a></p>
+    <p class="name-home-reference"><a class="name-home-home-link" href="/" aria-label="krwill.xyz home">krwill.xyz</a><a href="https://www.openstreetmap.org/?mlat=47.9445&amp;mlon=-122.3046#map=10/47.9445/-122.3046" target="_blank" rel="noopener noreferrer">47.9445° N · 122.3046° W <i aria-hidden="true">↗</i></a></p>
     <h1 id="page-title"><span>Kristopher</span><span>Williams.</span></h1>
   </header>
 
