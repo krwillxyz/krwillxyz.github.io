@@ -37,7 +37,7 @@ body_class: home
       <a href="/background/">
         <span class="name-home-number">04</span>
         <span><strong>Background</strong><small>Selected work and experience.</small></span>
-        <i aria-hidden="true">→</i>
+        <i aria-hidden="true">←</i>
       </a>
     </nav>
   </div>
