@@ -12,14 +12,26 @@ product_styles: true
     <h1 id="products-title">Things I’ve made.</h1>
     <p class="directory-intro">Software, experiments, and useful systems. Some are practical, some exploratory; each began with something worth making real.</p>
 
-    <a class="product-card" href="/products/page-push/">
-      <img src="/assets/products/page-push/icon-0.1.2.png" alt="">
-      <div>
-        <h2>Page Push</h2>
-        <p>Configure once. Push anywhere.</p>
-        <span class="product-card-meta">browser extension</span>
-      </div>
-      <span class="product-card-arrow" aria-hidden="true">→</span>
-    </a>
+    <div class="product-list">
+      <a class="product-card pageprint-card" href="/products/pageprint/">
+        <img src="/assets/products/pageprint/icon-0.1.14.png" alt="">
+        <div>
+          <h2>Pageprint</h2>
+          <p>One click. The whole page.</p>
+          <span class="product-card-meta">browser extension · coming soon</span>
+        </div>
+        <span class="product-card-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="product-card" href="/products/page-push/">
+        <img src="/assets/products/page-push/icon-0.1.2.png" alt="">
+        <div>
+          <h2>Page Push</h2>
+          <p>Configure once. Push anywhere.</p>
+          <span class="product-card-meta">browser extension</span>
+        </div>
+        <span class="product-card-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
   </section>
 </div>

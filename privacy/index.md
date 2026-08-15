@@ -32,8 +32,8 @@ body_class: site-document-page
   </section>
 
   <section class="site-document-section">
-    <h2>Page Push remains separate</h2>
-    <p>The Page Push browser extension does not contain this site analytics code. Website analytics does not receive Page Push payloads, endpoint configuration, authorization credentials, or browsing events sent through the extension. See the separate <a href="/products/page-push/privacy/">Page Push privacy statement</a>.</p>
+    <h2>Browser extensions remain separate</h2>
+    <p>Pageprint and Page Push do not contain this site analytics code. Website analytics does not receive Pageprint screenshots, page URLs, usage state, or license data. It also does not receive Page Push payloads, endpoint configuration, authorization credentials, or delivery activity. See the separate <a href="/products/pageprint/privacy/">Pageprint</a> and <a href="/products/page-push/privacy/">Page Push</a> privacy statements.</p>
   </section>
 
   <section class="site-document-section">
