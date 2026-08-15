@@ -15,35 +15,37 @@ bio_image: /assets/images/world-cup-bio.jpg
   </figure>
 
   <div class="identity-copy">
-    <p class="year-mark">{{ site.time | date: "%Y" }}</p>
     <h1 id="page-title">Kristopher Williams</h1>
-    <p class="role-line">
-      <a class="role-link tooltip-link" href="/products/" aria-label="Tinkerer. Things I’ve made.">Tinkerer<span class="tooltip" role="tooltip">Things I’ve made</span></a>,
-      <span class="role-link tooltip-link" tabindex="0">Thinker<span class="tooltip" role="tooltip">Asking better questions</span></span>,
-      <a class="role-link tooltip-link" href="https://www.instagram.com/krwillxyz/" target="_blank" rel="noopener noreferrer" aria-label="Creator. Visit Instagram.">Creator<span class="tooltip" role="tooltip">Instagram</span></a>,
-      <a class="role-link tooltip-link" href="https://driftingforms.com" target="_blank" rel="noopener noreferrer" aria-label="Artist. Check out my artistic side.">Artist<span class="tooltip" role="tooltip">Check out my artistic side</span></a>,
-      <span class="role-link dad-joke" tabindex="0">Dad<span class="tooltip" role="tooltip">When does a joke become a dad joke? When it becomes apparent.</span></span>
+    <p class="identity-facets">
+      <a href="/products/">Tinkerer</a>
+      <a href="/resume/">Thinker</a>
+      <a href="https://www.instagram.com/krwillxyz/" target="_blank" rel="noopener noreferrer">Creator</a>
+      <a href="https://studio.driftingforms.com" target="_blank" rel="noopener noreferrer">Artist</a>
+      <span>Dad</span>
     </p>
-    <p class="identity-intro">I work across software, systems, artwork, and physical experiments—following useful or interesting ideas until they become real.</p>
+    <p class="identity-intro">I make software, artwork, and physical experiments—usually by following an interesting idea until it becomes real.</p>
 
     <div class="identity-facts" aria-label="Identity details">
-      <p class="location-field">
-        <span class="location-trigger" tabindex="0">Mukilteo, WA, USA</span>
-        <span class="map-popover" role="tooltip" aria-label="Map showing Mukilteo north of Seattle on Puget Sound">
+      <details class="identity-location" id="identity-location">
+        <summary><span>Mukilteo, Washington</span><small>Map · distance from you</small></summary>
+        <div class="identity-map">
           <iframe
             title="Map showing Mukilteo, Washington, north of Seattle"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-122.521%2C47.548%2C-122.189%2C48.010&amp;layer=mapnik&amp;marker=47.9445%2C-122.3046"
+            data-src="https://www.openstreetmap.org/export/embed.html?bbox=-122.521%2C47.548%2C-122.189%2C48.010&amp;layer=mapnik&amp;marker=47.9445%2C-122.3046"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <span class="map-caption">On Puget Sound, just north of Seattle.</span>
-        </span>
-      </p>
-      <p class="email-line"><a href="mailto:kristopher.williams@fastmail.com">kristopher.williams<wbr>@fastmail.com</a></p>
+          <div class="identity-map-actions">
+            <button type="button" id="distance-from-mukilteo">How far from you?</button>
+            <output id="distance-from-mukilteo-result" aria-live="polite">Location is used once, here in your browser.</output>
+          </div>
+        </div>
+      </details>
+      <p class="identity-email"><a href="mailto:kristopher.williams@fastmail.com">Email me</a></p>
     </div>
 
     <nav class="identity-paths" aria-label="Explore Kristopher Williams's work">
-      <a href="/products/"><span>Digital work</span><strong>Products &amp; experiments</strong><i aria-hidden="true">→</i></a>
-      <a href="https://studio.driftingforms.com" target="_blank" rel="noopener noreferrer"><span>Physical work</span><strong>Artwork &amp; studio</strong><i aria-hidden="true">↗</i></a>
+      <a href="/products/"><strong>Products &amp; experiments</strong><i aria-hidden="true">→</i></a>
+      <a href="https://studio.driftingforms.com" target="_blank" rel="noopener noreferrer"><strong>Artwork &amp; studio</strong><i aria-hidden="true">↗</i></a>
     </nav>
   </div>
 </section>
