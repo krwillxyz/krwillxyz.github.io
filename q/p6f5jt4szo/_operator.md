@@ -31,3 +31,16 @@ Set `mode` to `redirect`, then set `target` to any root-relative path on
 After changing the target, deploy GitHub Pages and scan the engraved URL in a
 private browser window. GitHub's edge may take a few minutes to converge; the
 router requests a fresh state file on every visit to minimize stale behavior.
+
+## Mode command
+
+From the repository root:
+
+```bash
+python3 q/p6f5jt4szo/_set_mode.py profile --publish
+python3 q/p6f5jt4szo/_set_mode.py lost --publish
+python3 q/p6f5jt4szo/_set_mode.py redirect https://krwill.xyz/future-card/ --publish
+```
+
+`--publish` refuses to run when the repository has other uncommitted work. Use
+`--dry-run` to validate a proposed mode without writing or publishing it.
