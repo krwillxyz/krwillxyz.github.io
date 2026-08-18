@@ -1,0 +1,104 @@
+---
+permalink: /q/p6f5jt4szo/
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#183c35">
+  <title>Wise Owl | Kristopher Williams</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="/q/p6f5jt4szo/route.css">
+</head>
+<body data-wise-owl-mode="pending">
+  <main class="card-shell mode-panel pending-panel" id="pending-panel" aria-live="polite">
+    <p class="eyebrow">wise owl / krwill.xyz</p>
+    <div class="route-mark" aria-hidden="true"><span></span><span></span></div>
+    <h1>Finding where<br>this points.</h1>
+    <p class="lede">This permanent link can change its purpose without changing the object that carries it.</p>
+    <noscript><p class="notice">JavaScript is required to refresh the current purpose of this link.</p></noscript>
+  </main>
+
+  <main class="card-shell mode-panel" id="profile-panel" hidden>
+    <header class="card-head">
+      <div>
+        <p class="eyebrow">wise owl / krwill.xyz</p>
+        <h1>A small,<br>permanent doorway.</h1>
+      </div>
+      <div class="owl-glyph" aria-hidden="true"></div>
+    </header>
+
+    <section class="identity" aria-label="Contact details">
+      <p class="name">Kristopher<br>Williams.</p>
+      <p class="facts">Artist. Engineer.<br>Founder of Drifting Forms.<br>Mukilteo, Washington, USA.</p>
+    </section>
+
+    <p class="quiet-note">The object carrying this link can stay put while the destination changes around it.</p>
+
+    <nav class="action-row" aria-label="Contact actions">
+      <a class="action" href="/q/p6f5jt4szo/kristopher-williams.vcf" download>Save contact</a>
+      <a class="action secondary" href="/">Visit krwill.xyz</a>
+    </nav>
+  </main>
+
+  <main class="card-shell mode-panel" id="lost-panel" hidden>
+    <p class="lost-badge">Wise Owl / lost and found</p>
+    <h1>Wise Owl is<br>looking for Kris.</h1>
+    <p class="lede">Thank you for scanning this wallet. It belongs to Kristopher Williams in Mukilteo, Washington. Please send an email so we can arrange its return without sharing personal details here.</p>
+
+    <nav class="action-row" aria-label="Recovery actions">
+      <a class="action" href="mailto:kristopher.williams@fastmail.com?subject=I%20found%20your%20wallet">Email Kristopher</a>
+      <a class="action secondary" href="/">Confirm identity</a>
+    </nav>
+  </main>
+  <script>
+    (() => {
+      const panels = {
+        pending: document.getElementById("pending-panel"),
+        profile: document.getElementById("profile-panel"),
+        lost: document.getElementById("lost-panel")
+      };
+      const stateUrl = new URL("state.json", window.location.href);
+      stateUrl.searchParams.set("fresh", Date.now().toString());
+
+      const show = (mode) => {
+        Object.entries(panels).forEach(([name, panel]) => {
+          panel.hidden = name !== mode;
+        });
+        document.body.dataset.wiseOwlMode = mode;
+        document.body.classList.toggle("lost", mode === "lost");
+        document.title = mode === "lost"
+          ? "Wise Owl found | Kristopher Williams"
+          : "Wise Owl | Kristopher Williams";
+      };
+
+      fetch(stateUrl, { cache: "no-store", credentials: "same-origin" })
+        .then((response) => {
+          if (!response.ok) throw new Error(`state ${response.status}`);
+          return response.json();
+        })
+        .then((state) => {
+          if (state.kind !== "krwill_qr_pointer.v1") {
+            throw new Error("invalid state");
+          }
+
+          if (state.mode === "profile" || state.mode === "lost") {
+            show(state.mode);
+            return;
+          }
+          if (state.mode !== "redirect" || typeof state.target !== "string") throw new Error("invalid mode");
+
+          const destination = new URL(state.target, window.location.origin);
+          if (destination.protocol !== "https:" && destination.origin !== window.location.origin) {
+            throw new Error("unsafe destination");
+          }
+          if (destination.href === window.location.href) throw new Error("redirect loop");
+          window.location.replace(destination.href);
+        })
+        .catch(() => show("profile"));
+    })();
+  </script>
+</body>
+</html>

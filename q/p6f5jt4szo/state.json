@@ -1,0 +1,8 @@
+{
+  "kind": "krwill_qr_pointer.v1",
+  "mode": "profile",
+  "target": null,
+  "updated_at": "2026-08-18T04:59:35+00:00",
+  "updated_at_local": "2026-08-17T21:59:35-07:00",
+  "note": "Set mode to lost for recovery, or redirect with an HTTPS target for a future destination."
+}
