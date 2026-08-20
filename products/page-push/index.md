@@ -14,12 +14,12 @@ analytics: false
     <section class="page-push-hero">
       <div class="page-push-copy">
         <img class="page-push-mark" src="/assets/products/page-push/icon-0.1.2.png" alt="Page Push">
-        <p class="product-kicker platform-kicker"><img src="/assets/platform/chrome-logo-m100.svg" alt="">Chrome extension</p>
+        <p class="product-kicker platform-kicker"><img src="/assets/platform/chrome-logo-m100.svg" alt="" width="19" height="19">Chrome extension</p>
         <h1>Your browser. Your endpoint.</h1>
         <p class="page-push-slogan">Configure once. Push anywhere.</p>
         <p class="page-push-lede">Push the page you’re viewing directly to your own software. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
         <div class="trust-facts" aria-label="Page Push trust facts"><span>Manual only</span><span>No cloud</span><span>No account</span><span>No analytics</span></div>
-        <a class="release-status page-push-status" href="https://chromewebstore.google.com/detail/knilajejnnkcfapaibggchnakannjeda?utm_source=item-share-cb" target="_blank" rel="noreferrer"><img src="/assets/platform/chrome-logo-m100.svg" alt="">Get Page Push · Chrome Web Store</a>
+        <a class="release-status page-push-status" href="https://chromewebstore.google.com/detail/knilajejnnkcfapaibggchnakannjeda?utm_source=item-share-cb" target="_blank" rel="noreferrer"><img src="/assets/platform/chrome-logo-m100.svg" alt="" width="18" height="18">Get Page Push · Chrome Web Store</a>
       </div>
       <figure class="page-push-demo" aria-label="Page Push direct delivery flow">
         <figcaption>One deliberate click. One direct POST.</figcaption>

@@ -13,12 +13,12 @@ analytics: false
     <section class="pageprint-hero">
       <div class="pageprint-copy">
         <img class="pageprint-mark" src="/assets/products/pageprint/icon-0.1.14.png" alt="Pageprint">
-        <p class="product-kicker platform-kicker"><img src="/assets/platform/chrome-logo-m100.svg" alt="">Chrome extension</p>
+        <p class="product-kicker platform-kicker"><img src="/assets/platform/chrome-logo-m100.svg" alt="" width="19" height="19">Chrome extension</p>
         <h1><span>One click.</span><span>The whole page.</span></h1>
         <p class="pageprint-slogan">A clean PNG of the page in front of you.</p>
         <p class="pageprint-lede">Pageprint walks an ordinary scrolling webpage, joins what it sees into one image, downloads it to your computer, and puts the page back where you left it.</p>
         <div class="trust-facts" aria-label="Pageprint trust facts"><span>Local capture</span><span>No uploads</span><span>No account</span><span>No analytics</span></div>
-        <span class="release-status pageprint-status"><img src="/assets/platform/chrome-logo-m100.svg" alt="">Chrome Web Store · coming soon</span>
+        <span class="release-status pageprint-status"><img src="/assets/platform/chrome-logo-m100.svg" alt="" width="18" height="18">Chrome Web Store · coming soon</span>
       </div>
       <figure class="pageprint-demo" aria-label="Several browser viewports becoming one PNG">
         <div class="capture-diagram">
