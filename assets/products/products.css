@@ -257,7 +257,7 @@
   background: var(--pageprint-ink);
 }
 
-.pageprint-status::before {
+.release-status.pageprint-status::before {
   content: none;
 }
 
