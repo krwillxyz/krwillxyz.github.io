@@ -32,7 +32,7 @@ product_styles: true
         <div>
           <h2>Page Push</h2>
           <p>Configure once. Push anywhere.</p>
-          <span class="product-card-meta">browser extension</span>
+          <span class="product-card-meta">Chrome extension</span>
         </div>
         <span class="product-card-arrow" aria-hidden="true">→</span>
       </a>

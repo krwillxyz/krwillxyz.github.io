@@ -6,6 +6,7 @@ body_class: product-site page-push-site
 product_styles: true
 favicon: /assets/products/page-push/icon-0.1.2.png
 social_image: /assets/products/page-push/social-card-0.1.7.png
+analytics: false
 ---
 
 <div class="product-shell">
@@ -13,18 +14,33 @@ social_image: /assets/products/page-push/social-card-0.1.7.png
     <section class="page-push-hero">
       <div class="page-push-copy">
         <img class="page-push-mark" src="/assets/products/page-push/icon-0.1.2.png" alt="Page Push">
-        <p class="product-kicker">browser extension</p>
+        <p class="product-kicker platform-kicker"><img src="/assets/platform/chrome-logo-m100.svg" alt="">Chrome extension</p>
         <h1>Your browser. Your endpoint.</h1>
         <p class="page-push-slogan">Configure once. Push anywhere.</p>
         <p class="page-push-lede">Push the page you’re viewing directly to your own software. One deliberate click, one compact JSON event, no Page Push cloud in the middle.</p>
         <div class="trust-facts" aria-label="Page Push trust facts"><span>Manual only</span><span>No cloud</span><span>No account</span><span>No analytics</span></div>
-        <a class="release-status" href="https://chromewebstore.google.com/detail/knilajejnnkcfapaibggchnakannjeda?utm_source=item-share-cb" target="_blank" rel="noreferrer">Get Page Push · Chrome Web Store</a>
+        <a class="release-status page-push-status" href="https://chromewebstore.google.com/detail/knilajejnnkcfapaibggchnakannjeda?utm_source=item-share-cb" target="_blank" rel="noreferrer"><img src="/assets/platform/chrome-logo-m100.svg" alt="">Get Page Push · Chrome Web Store</a>
       </div>
       <figure class="page-push-demo" aria-label="Page Push direct delivery flow">
-        <figcaption>One click. Direct delivery.</figcaption>
-        <div class="flow-node flow-browser"><span class="flow-node-icon">↗</span><div><b>Current page</b><small>URL · title · selected text</small></div></div>
-        <div class="flow-path"><span>JSON</span><i aria-hidden="true">→</i></div>
-        <div class="flow-node flow-endpoint"><span class="flow-node-icon">{ }</span><div><b>Your API</b><small>HTTPS endpoint</small></div></div>
+        <figcaption>One deliberate click. One direct POST.</figcaption>
+        <div class="push-flow-stage">
+          <div class="push-browser-window">
+            <div class="push-browser-bar">
+              <span class="push-browser-controls" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="push-address">example.com/article</span>
+              <span class="push-toolbar-action"><img src="/assets/products/page-push/icon-0.1.2.png" alt=""><b>Push</b></span>
+            </div>
+            <div class="push-page-preview" aria-hidden="true">
+              <i class="push-page-heading"></i><i></i><i></i><i class="push-selection"></i><i></i>
+            </div>
+          </div>
+          <div class="push-transport"><span>HTTPS POST</span><i aria-hidden="true">↓</i><small>application/json</small></div>
+          <div class="push-delivery-row">
+            <div class="push-json-card"><span>JSON event</span><code>{<br>&nbsp;&nbsp;"url": "…",<br>&nbsp;&nbsp;"title": "…",<br>&nbsp;&nbsp;"text": "…"<br>}</code></div>
+            <i class="push-delivery-arrow" aria-hidden="true">→</i>
+            <div class="push-endpoint-card"><span>Your endpoint</span><b>api.example.net/intake</b><small><i></i> 2xx received</small></div>
+          </div>
+        </div>
         <p class="flow-proof"><strong>Your browser talks directly to your endpoint.</strong><br>No Page Push server in between.</p>
       </figure>
     </section>
