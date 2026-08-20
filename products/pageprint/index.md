@@ -5,6 +5,7 @@ description: "Capture an ordinary scrolling webpage as one local PNG."
 body_class: product-site pageprint-site
 product_styles: true
 favicon: /assets/products/pageprint/icon-0.1.14.png
+analytics: false
 ---
 
 <div class="product-shell">

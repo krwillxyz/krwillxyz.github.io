@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+{% if page.analytics != false %}
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -79,6 +80,7 @@
     window.krwillAnalytics.load();
   }
 </script>
+{% endif %}
 {% assign favicon_path = page.favicon | default: '/favicon.ico' %}
 <link rel="icon" href="{{ favicon_path | relative_url }}" sizes="any"{% if page.favicon %} type="image/png"{% endif %}>
 <title>{{ page.title | default: site.title }}</title>
@@ -1473,6 +1475,7 @@
 <main>
   {{ content }}
 </main>
+{% if page.analytics != false %}
 <aside class="analytics-consent" id="analytics-consent" role="dialog" aria-modal="false" aria-labelledby="analytics-consent-title" hidden>
   <h2 id="analytics-consent-title">Simple, private measurement.</h2>
   <p>This site uses privacy-restricted Google Analytics to learn which pages are useful. No advertising, remarketing, or Google Signals. <a href="/privacy/">Read the details.</a></p>
@@ -1481,6 +1484,7 @@
     <button class="analytics-consent-decline" type="button" data-analytics-consent="denied">Decline</button>
   </div>
 </aside>
+{% endif %}
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div class="site-footer-identity">
@@ -1494,7 +1498,9 @@
       <a href="https://studio.driftingforms.com" target="_blank" rel="noopener noreferrer">Studio</a>
       {% endunless %}
       <a href="/privacy/">Site privacy</a>
+      {% if page.analytics != false %}
       <button type="button" id="analytics-choices">Analytics choices</button>
+      {% endif %}
     </nav>
   </div>
 </footer>
@@ -1504,6 +1510,7 @@
     image.addEventListener("contextmenu", (event) => event.preventDefault());
   });
 
+  {% if page.analytics != false %}
   (function () {
     const analytics = window.krwillAnalytics;
     const panel = document.getElementById("analytics-consent");
@@ -1564,6 +1571,7 @@
 
     if (!analytics.savedConsent) panel.hidden = false;
   }());
+  {% endif %}
 </script>
 </body>
 </html>

@@ -5,6 +5,7 @@ description: "Release-candidate history for the Pageprint Chrome extension."
 body_class: product-site pageprint-site product-document
 product_styles: true
 favicon: /assets/products/pageprint/icon-0.1.14.png
+analytics: false
 ---
 
 <div class="product-shell">

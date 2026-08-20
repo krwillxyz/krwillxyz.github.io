@@ -5,6 +5,7 @@ description: "Pageprint creates screenshots locally, with no screenshot uploads,
 body_class: product-site pageprint-site product-document
 product_styles: true
 favicon: /assets/products/pageprint/icon-0.1.14.png
+analytics: false
 ---
 
 <div class="product-shell">
@@ -21,7 +22,7 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
     <section class="document-section"><h2>Temporary page state</h2><p>During a requested capture, Pageprint reads the page's current scroll position only so it can walk the document and restore that position afterward. It does not retain a history of scroll positions or other page interactions.</p></section>
     <section class="document-section"><h2>Purchase and license verification</h2><p>Pageprint uses Lemon Squeezy as merchant of record and license provider for its $4.99 one-time unlimited unlock. Lemon Squeezy handles payment, card, customer, tax, receipt, and refund information under its policies; Pageprint never receives card details.</p><p>Activating, checking, or deactivating a license sends only the license key and installation identifier directly to Lemon Squeezy's license API. A verified entitlement is cached locally so ordinary captures do not require an online license check. Page content, page URLs, screenshots, and browsing history are never included.</p></section>
     <section class="document-section"><h2>Removing data</h2><p>Removing Pageprint clears the data stored by the extension in your browser. Downloaded PNG files remain wherever you saved them and can be deleted like any other local file.</p></section>
-    <section class="document-section"><h2>Website analytics are separate</h2><p>The Pageprint extension does not contain the analytics used on krwill.xyz. Website analytics does not receive Pageprint screenshots, page URLs, usage counts, or license data.</p></section>
+    <section class="document-section"><h2>Website analytics are separate</h2><p>The Pageprint extension does not contain website analytics. These Pageprint pages do not load the analytics used elsewhere on krwill.xyz, and website analytics never receives Pageprint screenshots, page URLs, usage counts, or license data.</p></section>
     <section class="document-section"><h2>Contact</h2><p>Questions about Pageprint or this privacy statement can be sent to <a href="mailto:support@krwill.xyz">support@krwill.xyz</a>.</p><p>Effective August 20, 2026.</p></section>
     <footer class="document-links"><a href="/products/pageprint/">Pageprint</a><a href="/products/pageprint/support/">Support</a><a href="/products/pageprint/changelog/">Changelog</a></footer>
   </article>
