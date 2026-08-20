@@ -242,13 +242,29 @@
   font: clamp(1rem, 2vw, 1.2rem)/1.56 Georgia, serif;
 }
 
+.platform-kicker {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.platform-kicker img {
+  width: 19px;
+  height: 19px;
+}
+
 .pageprint-status {
   background: var(--pageprint-ink);
 }
 
 .pageprint-status::before {
-  background: var(--pageprint-cyan);
-  box-shadow: 0 0 0 4px rgba(66, 190, 194, 0.17);
+  content: none;
+}
+
+.pageprint-status img {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
 }
 
 .pageprint-demo {

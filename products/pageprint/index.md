@@ -12,12 +12,12 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
     <section class="pageprint-hero">
       <div class="pageprint-copy">
         <img class="pageprint-mark" src="/assets/products/pageprint/icon-0.1.14.png" alt="Pageprint">
-        <p class="product-kicker">browser extension</p>
+        <p class="product-kicker platform-kicker"><img src="/assets/platform/chrome-logo-m100.svg" alt="">Chrome extension</p>
         <h1><span>One click.</span><span>The whole page.</span></h1>
         <p class="pageprint-slogan">A clean PNG of the page in front of you.</p>
         <p class="pageprint-lede">Pageprint walks an ordinary scrolling webpage, joins what it sees into one image, downloads it to your computer, and puts the page back where you left it.</p>
         <div class="trust-facts" aria-label="Pageprint trust facts"><span>Local capture</span><span>No uploads</span><span>No account</span><span>No analytics</span></div>
-        <span class="release-status pageprint-status">Chrome Web Store · coming soon</span>
+        <span class="release-status pageprint-status"><img src="/assets/platform/chrome-logo-m100.svg" alt="">Chrome Web Store · coming soon</span>
       </div>
       <figure class="pageprint-demo" aria-label="Several browser viewports becoming one PNG">
         <div class="capture-diagram">
@@ -48,7 +48,7 @@ favicon: /assets/products/pageprint/icon-0.1.14.png
         <div><b>What it fits</b><p>Articles, documentation, product pages, forums, long references, image-heavy pages, and other ordinary vertically scrolling documents.</p></div>
         <div><b>What stays local</b><p>Page content, page URLs, intermediate captures, stitching, usage state, and the finished screenshot remain in your browser and on your computer.</p></div>
         <div><b>Where it stops</b><p>Infinite feeds, virtualized or nested-scroll apps, WebGL experiences, video, and rapidly changing pages may fail or produce a clearly labeled best attempt.</p></div>
-        <div><b>How it will launch</b><p>The first 25 successful captures are free. Unlimited capture is planned as a $4.99 one-time purchase after checkout and license proof are complete.</p></div>
+        <div><b>How payment works</b><p>The first 25 successful captures are free. Unlimited capture is $4.99 once through Lemon Squeezy, with no subscription. Hosted checkout opens only when you choose <strong>Buy unlimited</strong>.</p></div>
       </div>
     </section>
 
