@@ -22,7 +22,7 @@ product_styles: true
         <div>
           <h2>Pageprint</h2>
           <p>One click. The whole page.</p>
-          <span class="product-card-meta">Chrome extension · coming soon</span>
+          <span class="product-card-meta">Chrome extension · available now</span>
         </div>
         <span class="product-card-arrow" aria-hidden="true">→</span>
       </a>

@@ -18,7 +18,7 @@ analytics: false
         <p class="pageprint-slogan">A clean PNG of the page in front of you.</p>
         <p class="pageprint-lede">Pageprint walks an ordinary scrolling webpage, joins what it sees into one image, downloads it to your computer, and puts the page back where you left it.</p>
         <div class="trust-facts" aria-label="Pageprint trust facts"><span>Local capture</span><span>No uploads</span><span>No account</span><span>No analytics</span></div>
-        <span class="release-status pageprint-status"><img src="/assets/platform/chrome-logo-m100.svg" alt="" width="18" height="18">Chrome Web Store · coming soon</span>
+        <a class="release-status pageprint-status" href="https://chromewebstore.google.com/detail/pageprint/oekdjihofonmgjfkcabpcgohofnlooep" target="_blank" rel="noreferrer"><img src="/assets/platform/chrome-logo-m100.svg" alt="" width="18" height="18">Get Pageprint · Chrome Web Store</a>
       </div>
       <figure class="pageprint-demo" aria-label="Several browser viewports becoming one PNG">
         <div class="capture-diagram">
@@ -53,6 +53,6 @@ analytics: false
       </div>
     </section>
 
-    <footer class="product-footer"><span><strong class="product-footer-context">Pageprint extension</strong> · <a href="https://company.driftingforms.com/">A Drifting Forms product.</a></span><nav class="product-footer-links" aria-label="Pageprint extension links"><a href="/products/pageprint/privacy/">Extension privacy</a><a href="/products/pageprint/support/">Support</a><a href="/products/pageprint/changelog/">Changelog</a></nav></footer>
+    <footer class="product-footer"><span><strong class="product-footer-context">Pageprint extension</strong> · <a href="https://company.driftingforms.com/">A Drifting Forms product.</a></span><nav class="product-footer-links" aria-label="Pageprint extension links"><a href="https://chromewebstore.google.com/detail/pageprint/oekdjihofonmgjfkcabpcgohofnlooep" target="_blank" rel="noreferrer">Chrome Web Store</a><a href="/products/pageprint/privacy/">Extension privacy</a><a href="/products/pageprint/support/">Support</a><a href="/products/pageprint/changelog/">Changelog</a></nav></footer>
   </article>
 </div>
