@@ -17,25 +17,25 @@ product_styles: true
     </header>
 
     <div class="product-list">
-      <a class="product-card pageprint-card" href="/products/pageprint/">
-        <img src="/assets/products/pageprint/icon-0.1.14.png" alt="">
-        <div>
-          <h2>Pageprint</h2>
+      <article class="product-card pageprint-card">
+        <a class="product-card-icon-link" href="/products/pageprint/" aria-label="Pageprint"><img class="product-card-icon" src="/assets/products/pageprint/icon-0.1.14.png" alt=""></a>
+        <div class="product-card-copy">
+          <a class="product-card-title" href="/products/pageprint/"><h2>Pageprint</h2></a>
           <p>One click. The whole page.</p>
-          <span class="product-card-meta">Chrome extension · available now</span>
+          <a class="product-card-platform" href="https://chromewebstore.google.com/detail/pageprint/oekdjihofonmgjfkcabpcgohofnlooep" target="_blank" rel="noopener noreferrer"><img src="/assets/platform/chrome-logo-m100.svg" alt=""><span>Chrome extension · Web Store ↗</span></a>
         </div>
-        <span class="product-card-arrow" aria-hidden="true">→</span>
-      </a>
+        <a class="product-card-arrow" href="/products/pageprint/" aria-label="Open Pageprint">→</a>
+      </article>
 
-      <a class="product-card" href="/products/page-push/">
-        <img src="/assets/products/page-push/icon-0.1.2.png" alt="">
-        <div>
-          <h2>Page Push</h2>
+      <article class="product-card">
+        <a class="product-card-icon-link" href="/products/page-push/" aria-label="Page Push"><img class="product-card-icon" src="/assets/products/page-push/icon-0.1.2.png" alt=""></a>
+        <div class="product-card-copy">
+          <a class="product-card-title" href="/products/page-push/"><h2>Page Push</h2></a>
           <p>Configure once. Push anywhere.</p>
-          <span class="product-card-meta">Chrome extension</span>
+          <a class="product-card-platform" href="https://chromewebstore.google.com/detail/knilajejnnkcfapaibggchnakannjeda?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer"><img src="/assets/platform/chrome-logo-m100.svg" alt=""><span>Chrome extension · Web Store ↗</span></a>
         </div>
-        <span class="product-card-arrow" aria-hidden="true">→</span>
-      </a>
+        <a class="product-card-arrow" href="/products/page-push/" aria-label="Open Page Push">→</a>
+      </article>
     </div>
 
     <section class="practice-route" aria-labelledby="practice-title">

@@ -82,14 +82,26 @@
 }
 
 .product-card:hover,
-.product-card:focus-visible {
+.product-card:focus-within {
   transform: translateY(-3px);
   box-shadow: 0 20px 44px rgba(23, 33, 29, 0.12);
 }
 
-.product-card img {
+.product-card-icon-link {
+  display: block;
+  border-radius: 20px;
+}
+
+.product-card-icon {
+  display: block;
   width: 90px;
   height: 90px;
+}
+
+.product-card-title {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .product-card h2 {
@@ -105,13 +117,30 @@
   font: 1rem/1.45 Georgia, serif;
 }
 
-.product-card-meta {
-  display: block;
+.product-card-platform {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
   margin-top: 12px;
+  padding: 6px 9px 6px 7px;
+  border: 1px solid rgba(55, 112, 90, 0.3);
+  border-radius: 999px;
   color: #37705a;
   font: 750 0.69rem/1.2 ui-monospace, "SFMono-Regular", Menlo, monospace;
   letter-spacing: 0.06em;
+  text-decoration: none;
   text-transform: uppercase;
+}
+
+.product-card-platform img {
+  width: 15px;
+  height: 15px;
+}
+
+.product-card-platform:hover,
+.product-card-platform:focus-visible {
+  border-color: currentColor;
+  background: rgba(255, 255, 255, 0.58);
 }
 
 .product-card-arrow {
@@ -123,6 +152,7 @@
   background: #17211d;
   color: #fffaf0;
   font-size: 1.2rem;
+  text-decoration: none;
 }
 
 .practice-route {
@@ -171,8 +201,9 @@
     linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(214, 238, 227, 0.42));
 }
 
-.pageprint-card .product-card-meta {
+.pageprint-card .product-card-platform {
   color: #087982;
+  border-color: rgba(8, 121, 130, 0.32);
 }
 
 .pageprint-card .product-card-arrow {
@@ -1170,7 +1201,7 @@
     gap: 16px;
   }
 
-  .product-card img {
+  .product-card-icon {
     width: 62px;
     height: 62px;
   }
