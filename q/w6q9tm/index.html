@@ -1,6 +1,6 @@
 ---
 layout: null
-title: Kristopher Williams
+title: Keychain | Kristopher Williams
 permalink: /q/w6q9tm/
 robots: noindex, nofollow
 sitemap: false
@@ -11,12 +11,63 @@ sitemap: false
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta http-equiv="refresh" content="0; url=/">
-  <link rel="canonical" href="{{ '/' | absolute_url }}">
-  <title>Kristopher Williams</title>
-  <script>window.location.replace("/" + window.location.search + window.location.hash);</script>
+  <meta name="theme-color" content="#183c35">
+  <link rel="canonical" href="{{ '/q/w6q9tm/' | absolute_url }}">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="/q/w6q9tm/route.css">
+  <title>Keychain | Kristopher Williams</title>
 </head>
-<body>
-  <p>This address now points to <a href="/">krwill.xyz</a>.</p>
+<body data-keychain-mode="inactive">
+  <main class="keychain-card" aria-live="polite">
+    <section class="mode-panel" id="inactive-panel">
+      <p class="eyebrow">w6q9tm / krwill.xyz</p>
+      <div class="key-mark" aria-hidden="true"><span></span></div>
+      <h1>Not in<br>use yet.</h1>
+      <p class="lede">This keychain has not been placed in service. Its permanent address is reserved for later.</p>
+      <a class="action secondary" href="/">Visit krwill.xyz</a>
+    </section>
+
+    <section class="mode-panel" id="active-panel" hidden>
+      <p class="eyebrow">keychain / krwill.xyz</p>
+      <div class="key-mark active" aria-hidden="true"><span></span></div>
+      <h1>Hello.<br>These are<br>Kris's keys.</h1>
+      <p class="lede">They belong to Kristopher Williams. If they are not with him, thank you for finding them. An email is the quickest way to help.</p>
+      <p class="introduction">Kristopher is an artist and engineer. This small permanent doorway also leads to his work and experiments.</p>
+      <nav class="action-row" aria-label="Keychain actions">
+        <a class="action" href="mailto:me@krwill.xyz?subject=I%20found%20your%20keys">I found these keys</a>
+        <a class="action secondary" href="/">Meet Kristopher</a>
+      </nav>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const panels = {
+        inactive: document.getElementById("inactive-panel"),
+        active: document.getElementById("active-panel")
+      };
+      const stateUrl = new URL("state.json", window.location.href);
+      stateUrl.searchParams.set("fresh", Date.now().toString());
+
+      const show = (mode) => {
+        Object.entries(panels).forEach(([name, panel]) => {
+          panel.hidden = name !== mode;
+        });
+        document.body.dataset.keychainMode = mode;
+      };
+
+      fetch(stateUrl, { cache: "no-store", credentials: "same-origin" })
+        .then((response) => {
+          if (!response.ok) throw new Error(`state ${response.status}`);
+          return response.json();
+        })
+        .then((state) => {
+          if (state.kind !== "krwill_keychain_pointer.v1") throw new Error("invalid state");
+          if (state.mode !== "inactive" && state.mode !== "active") throw new Error("invalid mode");
+          show(state.mode);
+        })
+        .catch(() => show("inactive"));
+    })();
+  </script>
 </body>
 </html>
