@@ -435,16 +435,22 @@
 .demo-capture-cue {
   position: absolute;
   z-index: 3;
-  right: calc(100% + 7px);
-  bottom: -32px;
+  top: -73px;
+  left: -65.5px;
   display: block;
-  width: max-content;
-  color: #d7582c;
-  font: 900 118px/1 "Avenir Next", "Trebuchet MS", sans-serif;
+  width: 120px;
+  height: 92px;
+  overflow: visible;
   pointer-events: none;
-  text-shadow: 0 2px 0 rgba(11, 48, 39, 0.18);
-  transform: rotate(23deg) scaleX(1.15);
-  transform-origin: 100% 50%;
+  filter: drop-shadow(0 2px 0 rgba(11, 48, 39, 0.18));
+}
+
+.demo-capture-cue path {
+  fill: none;
+  stroke: #d7582c;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .demo-instruction {

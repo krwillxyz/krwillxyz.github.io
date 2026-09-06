@@ -26,7 +26,7 @@ analytics: false
           <div class="demo-browser-bar">
             <span class="demo-browser-controls" aria-hidden="true"><i></i><i></i><i></i></span>
             <span class="demo-address">krwill.xyz/products/pageprint/</span>
-            <a class="demo-capture" data-demo-capture href="/assets/products/pageprint/examples/pageprint-product-page-sample.png" download aria-label="Capture this page with the Pageprint demonstration" title="Capture this page"><span class="demo-capture-cue" aria-hidden="true">&#10140;</span><img src="/assets/products/pageprint/icon-0.1.14.png" alt=""></a>
+            <a class="demo-capture" data-demo-capture href="/assets/products/pageprint/examples/pageprint-product-page-sample.png" download aria-label="Capture this page with the Pageprint demonstration" title="Capture this page"><svg class="demo-capture-cue" viewBox="0 0 120 92" aria-hidden="true" focusable="false"><path d="M14 14 C62 8 91 27 91 66"></path><path d="M72 49 L91 73 L109 48"></path></svg><img src="/assets/products/pageprint/icon-0.1.14.png" alt=""></a>
           </div>
         </div>
         <p class="demo-instruction"><strong>Watch this page move.</strong> The finished PNG lands in Downloads.</p>
