@@ -64,11 +64,16 @@
   }
 
   function restorePage() {
-    window.scrollTo({
-      top: startY,
-      left: startX,
-      behavior: "auto",
-    });
+    const rootStyle = document.documentElement.style;
+    const previousValue = rootStyle.getPropertyValue("scroll-behavior");
+    const previousPriority = rootStyle.getPropertyPriority("scroll-behavior");
+    rootStyle.setProperty("scroll-behavior", "auto", "important");
+    window.scrollTo(startX, startY);
+    if (previousValue) {
+      rootStyle.setProperty("scroll-behavior", previousValue, previousPriority);
+    } else {
+      rootStyle.removeProperty("scroll-behavior");
+    }
   }
 
   function finish() {
