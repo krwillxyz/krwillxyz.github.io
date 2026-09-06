@@ -64,7 +64,7 @@
     window.scrollTo({
       top: startY,
       left: startX,
-      behavior: reducedMotion ? "auto" : "smooth",
+      behavior: "auto",
     });
   }
 
