@@ -6,9 +6,12 @@
 
   const trigger = demo.querySelector("[data-demo-capture]");
   const liveStatus = document.querySelector("[data-demo-live-status]");
-  const liveCopy = liveStatus.querySelector("[data-demo-live-copy]");
+  const liveCopy = liveStatus?.querySelector("[data-demo-live-copy]");
+  if (!trigger || !liveStatus || !liveCopy) return;
+
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let timers = [];
+  let recoveryTimer = null;
   let running = false;
   let startX = 0;
   let startY = 0;
@@ -69,6 +72,8 @@
   }
 
   function finish() {
+    window.clearTimeout(recoveryTimer);
+    recoveryTimer = null;
     const filename = buildFilename();
     const download = document.createElement("a");
     download.href = trigger.href;
@@ -93,6 +98,7 @@
     running = true;
     timers.forEach(window.clearTimeout);
     timers = [];
+    window.clearTimeout(recoveryTimer);
     demo.classList.add("is-capturing");
     startX = window.scrollX;
     startY = window.scrollY;
@@ -100,6 +106,16 @@
     trigger.setAttribute("aria-label", "Pageprint sample is capturing");
     liveStatus.classList.remove("is-saved");
     liveStatus.hidden = false;
+    recoveryTimer = window.setTimeout(() => {
+      timers.forEach(window.clearTimeout);
+      timers = [];
+      restorePage();
+      liveStatus.hidden = true;
+      liveStatus.classList.remove("is-saved");
+      trigger.removeAttribute("aria-disabled");
+      trigger.setAttribute("aria-label", "Capture this page");
+      running = false;
+    }, 12_000);
     setStep("Preparing full page\u2026");
     later(520, () => {
       setStep("Capturing full page\u2026");

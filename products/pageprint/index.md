@@ -23,7 +23,7 @@ analytics: false
       <figure class="pageprint-demo" data-pageprint-demo>
         <figcaption class="pageprint-demo-heading"><span>Try Pageprint</span><strong>Click once. Keep this page.</strong></figcaption>
         <div class="demo-action">
-          <div class="demo-capture-cue" aria-hidden="true"><span>Click the extension</span><svg viewBox="0 0 220 104"><path d="M12 18c71-9 62 66 166 66h22"></path><path d="m186 73 15 11-15 12"></path></svg></div>
+          <div class="demo-capture-cue" aria-hidden="true"><span>Click here</span><svg viewBox="0 0 280 156"><path d="M10 24c98-16 91 119 238 124"></path><path d="m232 136 17 12-17 11"></path></svg></div>
           <div class="demo-browser-bar">
             <span class="demo-browser-controls" aria-hidden="true"><i></i><i></i><i></i></span>
             <span class="demo-address">krwill.xyz/products/pageprint/</span>
@@ -62,4 +62,4 @@ analytics: false
     <footer class="product-footer"><span><strong class="product-footer-context">Pageprint extension</strong> · <a href="https://company.driftingforms.com/">A Drifting Forms product.</a></span><nav class="product-footer-links" aria-label="Pageprint extension links"><a href="https://chromewebstore.google.com/detail/pageprint/oekdjihofonmgjfkcabpcgohofnlooep" target="_blank" rel="noreferrer">Chrome Web Store</a><a href="/products/pageprint/privacy/">Extension privacy</a><a href="/products/pageprint/support/">Support</a><a href="/products/pageprint/changelog/">Changelog</a></nav></footer>
   </article>
 </div>
-<script src="/assets/products/pageprint/demo.js" defer></script>
+<script src="/assets/products/pageprint/demo.js?v=bcd92a7c103a6dd3" defer></script>

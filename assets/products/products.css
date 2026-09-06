@@ -346,7 +346,7 @@
   position: relative;
   width: min(470px, 100%);
   margin: 20px auto 0;
-  padding-top: 92px;
+  padding-top: 116px;
 }
 
 .demo-browser-bar {
@@ -356,7 +356,7 @@
   grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 11px;
   align-items: center;
-  min-height: 66px;
+  min-height: 72px;
   padding: 10px 11px 10px 15px;
   border: 1px solid rgba(215, 247, 232, 0.52);
   border-radius: 16px;
@@ -397,8 +397,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 43px;
-  height: 43px;
+  width: 49px;
+  height: 49px;
   padding: 4px;
   border: 0;
   border-radius: 8px;
@@ -424,22 +424,22 @@
 }
 
 .demo-capture img {
-  width: 35px;
-  height: 35px;
-  border-radius: 7px;
+  width: 41px;
+  height: 41px;
+  border-radius: 8px;
 }
 
 .demo-capture-cue {
   position: absolute;
   z-index: 3;
   top: 0;
-  right: 2px;
+  right: -2px;
   display: block;
-  width: 220px;
-  height: 104px;
+  width: 280px;
+  height: 156px;
   color: #d7582c;
-  font: 850 0.68rem/1 ui-monospace, "SFMono-Regular", Menlo, monospace;
-  letter-spacing: 0.1em;
+  font: 900 0.82rem/1 ui-monospace, "SFMono-Regular", Menlo, monospace;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   pointer-events: none;
 }
@@ -451,12 +451,12 @@
 }
 
 .demo-capture-cue svg {
-  width: 220px;
-  height: 104px;
+  width: 280px;
+  height: 156px;
   overflow: visible;
   fill: none;
   stroke: currentColor;
-  stroke-width: 2.2;
+  stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -1228,24 +1228,6 @@
 
   .demo-browser-bar {
     grid-template-columns: minmax(0, 1fr) auto;
-  }
-
-  .demo-action {
-    padding-top: 83px;
-  }
-
-  .demo-capture-cue {
-    width: 184px;
-    height: 88px;
-  }
-
-  .demo-capture-cue svg {
-    width: 184px;
-    height: 88px;
-  }
-
-  .demo-capture-cue span {
-    font-size: 0.58rem;
   }
 
   .page-push-demo figcaption {
