@@ -68,7 +68,7 @@
     const previousValue = rootStyle.getPropertyValue("scroll-behavior");
     const previousPriority = rootStyle.getPropertyPriority("scroll-behavior");
     rootStyle.setProperty("scroll-behavior", "auto", "important");
-    window.scrollTo(startX, startY);
+    window.scrollTo({ top: startY, left: startX, behavior: "instant" });
     if (previousValue) {
       rootStyle.setProperty("scroll-behavior", previousValue, previousPriority);
     } else {
@@ -92,6 +92,7 @@
     running = false;
     download.click();
     trigger.focus({ preventScroll: true });
+    restorePage();
     later(2600, () => {
       liveStatus.hidden = true;
       liveStatus.classList.remove("is-saved");

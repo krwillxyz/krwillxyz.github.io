@@ -62,4 +62,4 @@ analytics: false
     <footer class="product-footer"><span><strong class="product-footer-context">Pageprint extension</strong> · <a href="https://company.driftingforms.com/">A Drifting Forms product.</a></span><nav class="product-footer-links" aria-label="Pageprint extension links"><a href="https://chromewebstore.google.com/detail/pageprint/oekdjihofonmgjfkcabpcgohofnlooep" target="_blank" rel="noreferrer">Chrome Web Store</a><a href="/products/pageprint/privacy/">Extension privacy</a><a href="/products/pageprint/support/">Support</a><a href="/products/pageprint/changelog/">Changelog</a></nav></footer>
   </article>
 </div>
-<script src="/assets/products/pageprint/demo.js?v=a4aca8cf0b4ec82f" defer></script>
+<script src="/assets/products/pageprint/demo.js?v=4cacf8bd88d8084f" defer></script>
