@@ -346,7 +346,7 @@
   position: relative;
   width: min(470px, 100%);
   margin: 20px auto 0;
-  padding-top: 72px;
+  padding-top: 64px;
 }
 
 .demo-browser-bar {
@@ -398,12 +398,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 49px;
-  height: 49px;
-  padding: 4px;
-  border: 0;
-  border-radius: 8px;
-  background: var(--pageprint-ink);
+  width: 51px;
+  height: 51px;
+  padding: 2px;
+  border: 1px solid rgba(11, 48, 39, 0.2);
+  border-radius: 11px;
+  background: var(--pageprint-cream);
+  box-shadow: 0 3px 10px rgba(11, 48, 39, 0.13);
   color: var(--pageprint-cream);
   cursor: pointer;
   text-decoration: none;
@@ -411,7 +412,7 @@
 
 .demo-capture:hover,
 .demo-capture:focus-visible {
-  background: var(--pageprint-green);
+  background: #d7f7e8;
 }
 
 .demo-capture:focus-visible {
@@ -425,41 +426,24 @@
 }
 
 .demo-capture img {
-  width: 41px;
-  height: 41px;
-  border-radius: 8px;
+  width: 45px;
+  height: 45px;
+  border-radius: 9px;
 }
 
 .demo-capture-cue {
   position: absolute;
   z-index: 3;
-  right: calc(100% + 8px);
-  bottom: 8px;
+  right: calc(100% + 7px);
+  bottom: -32px;
   display: block;
-  width: 270px;
-  height: 120px;
+  width: max-content;
   color: #d7582c;
-  font: 900 0.82rem/1 ui-monospace, "SFMono-Regular", Menlo, monospace;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font: 900 118px/1 "Avenir Next", "Trebuchet MS", sans-serif;
   pointer-events: none;
-}
-
-.demo-capture-cue span {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.demo-capture-cue svg {
-  width: 270px;
-  height: 120px;
-  overflow: visible;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  text-shadow: 0 2px 0 rgba(11, 48, 39, 0.18);
+  transform: rotate(23deg) scaleX(1.15);
+  transform-origin: 100% 50%;
 }
 
 .demo-instruction {
