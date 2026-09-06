@@ -398,6 +398,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   width: 51px;
   height: 51px;
   padding: 2px;
@@ -426,9 +427,10 @@
 }
 
 .demo-capture img {
-  width: 45px;
-  height: 45px;
-  border-radius: 9px;
+  width: 60px;
+  max-width: none;
+  height: 60px;
+  flex: 0 0 60px;
 }
 
 .demo-capture-cue {
