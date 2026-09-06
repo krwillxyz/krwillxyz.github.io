@@ -49,7 +49,7 @@ analytics: false
         <div><b>What it fits</b><p>Articles, documentation, product pages, forums, long references, image-heavy pages, and other ordinary vertically scrolling documents.</p></div>
         <div><b>What stays local</b><p>Page content, page URLs, intermediate captures, stitching, usage state, and the finished screenshot remain in your browser and on your computer.</p></div>
         <div><b>Where it stops</b><p>Infinite feeds, virtualized or nested-scroll apps, WebGL experiences, video, and rapidly changing pages may fail or produce a clearly labeled best attempt.</p></div>
-        <div><b>How payment works</b><p>The first 25 successful captures are free. Unlimited capture is $4.99 once through Lemon Squeezy, with no subscription. Hosted checkout opens only when you choose <strong>Buy unlimited</strong>.</p></div>
+        <div><b>How payment works</b><p>The first 25 successful captures are free. Pageprint is $4.99 once to keep using, with no subscription. Hosted checkout opens only when you choose to activate it.</p></div>
       </div>
     </section>
 

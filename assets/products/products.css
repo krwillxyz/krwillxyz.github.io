@@ -288,6 +288,12 @@
   background: var(--pageprint-ink);
 }
 
+.pageprint-status:hover,
+.pageprint-status:focus-visible {
+  color: var(--pageprint-cream);
+  text-decoration-color: currentColor;
+}
+
 .release-status.pageprint-status::before {
   content: none;
 }
