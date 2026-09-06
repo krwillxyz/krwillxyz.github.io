@@ -21,33 +21,21 @@ analytics: false
         <a class="release-status pageprint-status" href="https://chromewebstore.google.com/detail/pageprint/oekdjihofonmgjfkcabpcgohofnlooep" target="_blank" rel="noreferrer"><img src="/assets/platform/chrome-logo-m100.svg" alt="" width="18" height="18">Get Pageprint · Chrome Web Store</a>
       </div>
       <figure class="pageprint-demo" data-pageprint-demo>
-        <figcaption class="pageprint-demo-heading"><span>Try Pageprint</span><strong>Capture this page.</strong></figcaption>
-        <div class="demo-browser">
+        <figcaption class="pageprint-demo-heading"><span>Try Pageprint</span><strong>Click once. Keep this page.</strong></figcaption>
+        <div class="demo-action">
+          <div class="demo-capture-cue" aria-hidden="true"><span>Click the extension</span><svg viewBox="0 0 220 104"><path d="M12 18c71-9 62 66 166 66h22"></path><path d="m186 73 15 11-15 12"></path></svg></div>
           <div class="demo-browser-bar">
             <span class="demo-browser-controls" aria-hidden="true"><i></i><i></i><i></i></span>
             <span class="demo-address">krwill.xyz/products/pageprint/</span>
-            <span class="demo-capture-cue" aria-hidden="true"><span>click</span><svg viewBox="0 0 42 24"><path d="M2 4c10 0 10 13 24 13h10"></path><path d="m31 12 6 5-6 5"></path></svg></span>
             <a class="demo-capture" data-demo-capture href="/assets/products/pageprint/examples/pageprint-product-page-sample.png" download aria-label="Capture this page with the Pageprint demonstration" title="Capture this page"><img src="/assets/products/pageprint/icon-0.1.14.png" alt=""></a>
           </div>
-          <div class="demo-viewport">
-            <div class="demo-document" aria-hidden="true">
-              <div class="demo-mini-hero"><img src="/assets/products/pageprint/icon-0.1.14.png" alt=""><small>Chrome extension</small><b>One click.<br>The whole page.</b><span>A clean PNG of the page in front of you.</span></div>
-              <div class="demo-mini-facts"><i></i><i></i><i></i><i></i></div>
-              <div class="demo-mini-section"><small>Capture, without ceremony</small><strong>A browser capability that feels like it should already exist.</strong><div><i></i><i></i><i></i><i></i></div></div>
-              <div class="demo-mini-section demo-mini-boundary"><small>Useful results, honest boundaries</small><strong>Built for the ordinary web.</strong><div><i></i><i></i><i></i><i></i></div></div>
-              <div class="demo-mini-footer"><span>Pageprint extension</span><i></i><i></i><i></i></div>
-            </div>
-          </div>
         </div>
-        <div class="demo-readout">
-          <span class="demo-state" data-demo-state>Ready</span>
-          <p data-demo-copy>Click the Pageprint icon. This page will move, return here, and give you the finished sample.</p>
-        </div>
-        <p class="demo-footnote">This staged sample does not use one of your 25 captures. <a href="/products/pageprint/how-it-works/">See how Pageprint handles the extreme case.</a></p>
+        <p class="demo-instruction"><strong>Watch this page move.</strong> The finished PNG lands in Downloads.</p>
+        <p class="demo-footnote">A real sample, without using one of your 25 captures. <a href="/products/pageprint/how-it-works/">See the extreme case.</a></p>
       </figure>
     </section>
 
-    <div class="demo-live-status" data-demo-live-status hidden aria-live="polite"><img src="/assets/products/pageprint/icon-0.1.14.png" alt=""><span data-demo-live-copy>Pageprint sample</span></div>
+    <div class="demo-live-status" data-demo-live-status hidden role="status" aria-live="polite"><span data-demo-live-copy>Preparing full page</span></div>
 
     <section class="product-section" aria-labelledby="capture-title">
       <p class="product-kicker">Capture, without ceremony</p>

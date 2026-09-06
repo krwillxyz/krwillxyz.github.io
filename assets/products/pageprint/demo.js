@@ -5,8 +5,6 @@
   if (!demo) return;
 
   const trigger = demo.querySelector("[data-demo-capture]");
-  const state = demo.querySelector("[data-demo-state]");
-  const copy = demo.querySelector("[data-demo-copy]");
   const liveStatus = document.querySelector("[data-demo-live-status]");
   const liveCopy = liveStatus.querySelector("[data-demo-live-copy]");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -49,10 +47,8 @@
     return `${host}-${title}-${localDate}-${localMinute}.png`;
   }
 
-  function setStep(label, message) {
-    state.textContent = label;
-    copy.textContent = message;
-    liveCopy.textContent = `Pageprint - ${label}`;
+  function setStep(label) {
+    liveCopy.textContent = label;
   }
 
   function scrollPage(progress) {
@@ -78,16 +74,18 @@
     download.href = trigger.href;
     download.download = filename;
     demo.classList.remove("is-capturing");
-    demo.classList.add("is-complete");
     trigger.removeAttribute("aria-disabled");
     trigger.setAttribute("aria-label", "Capture this page again");
     trigger.title = "Capture this page again";
-    state.textContent = "Saved";
-    copy.textContent = `${filename} was sent to your browser's downloads. This page is back where it started.`;
-    liveStatus.hidden = true;
+    liveStatus.classList.add("is-saved");
+    liveCopy.textContent = "Pageprint saved.";
     running = false;
     download.click();
     trigger.focus({ preventScroll: true });
+    later(2600, () => {
+      liveStatus.hidden = true;
+      liveStatus.classList.remove("is-saved");
+    });
   }
 
   function run() {
@@ -95,28 +93,28 @@
     running = true;
     timers.forEach(window.clearTimeout);
     timers = [];
-    demo.classList.remove("is-complete");
     demo.classList.add("is-capturing");
     startX = window.scrollX;
     startY = window.scrollY;
     trigger.setAttribute("aria-disabled", "true");
     trigger.setAttribute("aria-label", "Pageprint sample is capturing");
+    liveStatus.classList.remove("is-saved");
     liveStatus.hidden = false;
-    setStep("Reading page", "Measuring this document before anything moves.");
+    setStep("Preparing full page\u2026");
     later(520, () => {
-      setStep("Frame 1 of 3", "Capturing the first visible section locally.");
+      setStep("Capturing full page\u2026");
       scrollPage(0.34);
     });
     later(1320, () => {
-      setStep("Frame 2 of 3", "Walking through this page while repeated edges stay out of the result.");
+      setStep("Capturing full page\u2026");
       scrollPage(0.68);
     });
     later(2120, () => {
-      setStep("Frame 3 of 3", "Reaching the end of this page.");
+      setStep("Capturing full page\u2026");
       scrollPage(1);
     });
     later(2920, () => {
-      setStep("Joining locally", "Building one image and restoring your position.");
+      setStep("Processing full page\u2026");
       restorePage();
     });
     later(3800, finish);
