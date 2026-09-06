@@ -20,14 +20,31 @@ analytics: false
         <div class="trust-facts" aria-label="Pageprint trust facts"><span>Local capture</span><span>No uploads</span><span>No account</span><span>No analytics</span></div>
         <a class="release-status pageprint-status" href="https://chromewebstore.google.com/detail/pageprint/oekdjihofonmgjfkcabpcgohofnlooep" target="_blank" rel="noreferrer"><img src="/assets/platform/chrome-logo-m100.svg" alt="" width="18" height="18">Get Pageprint · Chrome Web Store</a>
       </div>
-      <figure class="pageprint-demo" aria-label="Several browser viewports becoming one PNG">
-        <div class="capture-diagram">
-          <figcaption class="capture-diagram-label">The whole page becomes one image</figcaption>
-          <div class="capture-stack" aria-hidden="true"><span class="capture-band"></span><span class="capture-band"></span><span class="capture-band"></span></div>
-          <span class="capture-arrow" aria-hidden="true">→</span>
-          <a class="capture-output" href="/assets/products/pageprint/examples/iana-root-zone-database-pageprint.png" target="_blank" rel="noreferrer" aria-label="Open a real 49,621-pixel Pageprint capture of the IANA Root Zone Database"><span class="capture-output-lines"></span></a>
-          <p class="capture-local">Created locally.<br>Downloaded directly.<a class="capture-proof-link" href="/assets/products/pageprint/examples/iana-root-zone-database-pageprint.png" target="_blank" rel="noreferrer">Open a real 49,621 px capture ↗</a></p>
+      <figure class="pageprint-demo" data-pageprint-demo>
+        <figcaption class="pageprint-demo-heading"><span>Try the idea</span><strong>This page, as one PNG.</strong></figcaption>
+        <div class="demo-browser">
+          <div class="demo-browser-bar">
+            <span class="demo-browser-controls" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="demo-address">krwill.xyz/products/pageprint/</span>
+            <button class="demo-capture" type="button" data-demo-capture><img src="/assets/products/pageprint/icon-0.1.14.png" alt=""><span>Capture</span></button>
+          </div>
+          <div class="demo-viewport" data-demo-viewport>
+            <div class="demo-document" aria-hidden="true">
+              <div class="demo-mini-hero"><img src="/assets/products/pageprint/icon-0.1.14.png" alt=""><small>Chrome extension</small><b>One click.<br>The whole page.</b><span>A clean PNG of the page in front of you.</span></div>
+              <div class="demo-mini-facts"><i></i><i></i><i></i><i></i></div>
+              <div class="demo-mini-section"><small>Capture, without ceremony</small><strong>A browser capability that feels like it should already exist.</strong><div><i></i><i></i><i></i><i></i></div></div>
+              <div class="demo-mini-section demo-mini-boundary"><small>Useful results, honest boundaries</small><strong>Built for the ordinary web.</strong><div><i></i><i></i><i></i><i></i></div></div>
+              <div class="demo-mini-footer"><span>Pageprint extension</span><i></i><i></i><i></i></div>
+            </div>
+            <span class="demo-scan" aria-hidden="true"></span>
+          </div>
         </div>
+        <div class="demo-readout">
+          <span class="demo-state" data-demo-state>Ready</span>
+          <p data-demo-copy>Click the Pageprint control. This is a miniature demonstration; it does not use one of your captures.</p>
+          <a class="demo-result" data-demo-result href="/assets/products/pageprint/examples/pageprint-product-page-sample.png" download hidden>Download this page sample <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="demo-footnote">The extension does this to the real page in front of you. <a href="/products/pageprint/how-it-works/">See how it handles the extreme case.</a></p>
       </figure>
     </section>
 
@@ -56,3 +73,4 @@ analytics: false
     <footer class="product-footer"><span><strong class="product-footer-context">Pageprint extension</strong> · <a href="https://company.driftingforms.com/">A Drifting Forms product.</a></span><nav class="product-footer-links" aria-label="Pageprint extension links"><a href="https://chromewebstore.google.com/detail/pageprint/oekdjihofonmgjfkcabpcgohofnlooep" target="_blank" rel="noreferrer">Chrome Web Store</a><a href="/products/pageprint/privacy/">Extension privacy</a><a href="/products/pageprint/support/">Support</a><a href="/products/pageprint/changelog/">Changelog</a></nav></footer>
   </article>
 </div>
+<script src="/assets/products/pageprint/demo.js" defer></script>
