@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+  if (window.location.hostname === "krwillxyz.github.io") {
+    document.documentElement.classList.add("github-pages-retired");
+  }
+</script>
 {% assign favicon_path = page.favicon | default: '/favicon.ico' %}
 <link rel="icon" href="{{ favicon_path | relative_url }}" sizes="any"{% if page.favicon %} type="image/png"{% endif %}>
 <title>{{ page.title | default: site.title }}</title>
@@ -74,6 +79,48 @@
       linear-gradient(90deg, transparent 0 calc(50% - 1px), rgba(36, 39, 41, 0.05) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)),
       repeating-linear-gradient(0deg, rgba(36, 39, 41, 0.026) 0 1px, transparent 1px 28px);
     opacity: 0.9;
+  }
+
+  .github-pages-retirement {
+    display: none;
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid rgba(250, 247, 239, 0.24);
+    color: #faf7ef;
+    background: #182126;
+  }
+
+  .github-pages-retired .github-pages-retirement {
+    display: block;
+  }
+
+  .github-pages-retirement-inner {
+    width: min(980px, 100%);
+    margin: 0 auto;
+    padding: 13px clamp(22px, 6vw, 72px);
+    display: flex;
+    gap: 12px 22px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .github-pages-retirement p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .github-pages-retirement strong {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.095em;
+    text-transform: uppercase;
+  }
+
+  .github-pages-retirement a {
+    color: inherit;
+    font-weight: 700;
+    text-underline-offset: 0.18em;
   }
 
   main {
@@ -1058,6 +1105,13 @@
   }
 
   @media (max-width: 620px) {
+    .github-pages-retirement-inner {
+      display: grid;
+      gap: 4px;
+      padding-top: 12px;
+      padding-bottom: 13px;
+    }
+
     main {
       place-items: start center;
       padding: 18px;
@@ -1277,6 +1331,12 @@
 </style>
 </head>
 <body class="{{ page.body_class | default: '' }}">
+<aside class="github-pages-retirement" aria-label="Hosting notice">
+  <div class="github-pages-retirement-inner">
+    <strong>Retired copy</strong>
+    <p>This GitHub Pages address is no longer maintained. Visit <a href="https://krwill.xyz/">krwill.xyz</a> for the current site.</p>
+  </div>
+</aside>
 <main>
   {{ content }}
 </main>
