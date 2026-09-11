@@ -48,7 +48,7 @@ test -s "$artifact/q/p6f5jt4szo/index.html"
 test -s "$artifact/q/w6q9tm/index.html"
 test -s "$artifact/_headers"
 test -s "$artifact/_worker.js"
-test ! -e "$artifact/CNAME"
+grep -Fxq 'krwill.xyz' "$artifact/CNAME"
 test ! -e "$artifact/tests"
 if rg -qi 'googletagmanager|G-4HXS6DPYT1|krwillAnalytics|Analytics choices' "$artifact"; then
   echo "browser analytics remained in the Cloudflare artifact" >&2
