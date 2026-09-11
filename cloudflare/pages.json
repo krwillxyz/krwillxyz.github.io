@@ -1,0 +1,20 @@
+{
+  "kind": "krwill_cloudflare_pages",
+  "schema_version": 1,
+  "account_id": "e5ce5fb92e24f4144c38555e4287bb52",
+  "project": "krwill-xyz",
+  "production_branch": "main",
+  "wrangler_version": "4.86.0",
+  "public_url": "https://krwill.xyz",
+  "staging_url": "https://krwill-xyz.pages.dev",
+  "custom_domains": [
+    "krwill.xyz",
+    "www.krwill.xyz"
+  ],
+  "analytics": {
+    "mode": "cloudflare_edge_only",
+    "browser_beacon": false,
+    "google_analytics": false
+  },
+  "resolver_prefix": "/q/"
+}

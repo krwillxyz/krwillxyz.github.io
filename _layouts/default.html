@@ -3,84 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-{% if page.analytics != false %}
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-
-  (function () {
-    const measurementId = "G-4HXS6DPYT1";
-    const consentKey = "krwill.analytics-consent.v1";
-    const restrictedRegions = [
-      "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE",
-      "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT",
-      "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"
-    ];
-    let savedConsent = null;
-    const browserRequestsPrivacy = navigator.globalPrivacyControl === true || navigator.doNotTrack === "1";
-
-    try {
-      savedConsent = window.localStorage.getItem(consentKey);
-    } catch (error) {
-      // Consent still works for this page when browser storage is unavailable.
-    }
-
-    const deniedByDefault = {
-      ad_storage: "denied",
-      ad_user_data: "denied",
-      ad_personalization: "denied",
-      analytics_storage: "denied",
-      personalization_storage: "denied"
-    };
-    const grantedAnalytics = {
-      ...deniedByDefault,
-      analytics_storage: "granted"
-    };
-
-    if (savedConsent === "granted") {
-      gtag("consent", "default", grantedAnalytics);
-    } else if (savedConsent === "denied") {
-      gtag("consent", "default", deniedByDefault);
-      window[`ga-disable-${measurementId}`] = true;
-    } else if (browserRequestsPrivacy) {
-      gtag("consent", "default", deniedByDefault);
-      window[`ga-disable-${measurementId}`] = true;
-    } else {
-      gtag("consent", "default", grantedAnalytics);
-      gtag("consent", "default", {
-        ...deniedByDefault,
-        region: restrictedRegions,
-        wait_for_update: 500
-      });
-    }
-
-    window.krwillAnalytics = {
-      measurementId,
-      consentKey,
-      deniedByDefault,
-      grantedAnalytics,
-      savedConsent,
-      load() {
-        if (document.querySelector(`script[data-analytics-id="${measurementId}"]`)) return;
-        gtag("js", new Date());
-        gtag("config", measurementId, {
-          allow_ad_personalization_signals: false,
-          allow_google_signals: false
-        });
-        const script = document.createElement("script");
-        script.async = true;
-        script.dataset.analyticsId = measurementId;
-        script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-        document.head.appendChild(script);
-      }
-    };
-  }());
-
-  if (!window[`ga-disable-${window.krwillAnalytics.measurementId}`]) {
-    window.krwillAnalytics.load();
-  }
-</script>
-{% endif %}
 {% assign favicon_path = page.favicon | default: '/favicon.ico' %}
 <link rel="icon" href="{{ favicon_path | relative_url }}" sizes="any"{% if page.favicon %} type="image/png"{% endif %}>
 <title>{{ page.title | default: site.title }}</title>
@@ -713,7 +635,6 @@
   }
 
   .site-document-card a,
-  .analytics-consent a,
   .site-footer a {
     color: inherit;
     text-underline-offset: 3px;
@@ -811,86 +732,6 @@
     color: rgba(113, 208, 174, 0.9);
     letter-spacing: 0.12em;
     text-transform: uppercase;
-  }
-
-  .site-footer-links button {
-    padding: 0;
-    border: 0;
-    background: transparent;
-    color: inherit;
-    font: inherit;
-    cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-  }
-
-  .analytics-consent[hidden] {
-    display: none;
-  }
-
-  .analytics-consent {
-    position: fixed;
-    z-index: 30;
-    right: auto;
-    bottom: 16px;
-    left: 50%;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 4px 22px;
-    align-items: center;
-    width: min(720px, calc(100vw - 32px));
-    padding: 16px 18px;
-    border: 1px solid rgba(36, 39, 41, 0.22);
-    border-radius: 16px;
-    background: rgba(250, 247, 239, 0.98);
-    box-shadow: 0 18px 55px rgba(36, 39, 41, 0.22);
-    color: var(--ink);
-    backdrop-filter: blur(14px);
-    transform: translateX(-50%);
-  }
-
-  .analytics-consent h2 {
-    margin: 0 0 3px;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.08rem;
-    font-weight: 500;
-  }
-
-  .analytics-consent p {
-    margin: 0;
-    color: var(--ink-soft);
-    font-size: 0.78rem;
-    line-height: 1.42;
-  }
-
-  .analytics-consent-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    margin-top: 0;
-  }
-
-  .analytics-consent-actions button {
-    min-height: 40px;
-    padding: 9px 13px;
-    border: 1px solid var(--ink);
-    border-radius: 0;
-    font: inherit;
-    font-size: 0.78rem;
-    font-weight: 700;
-    cursor: pointer;
-  }
-
-  .analytics-consent-accept {
-    background: var(--ink);
-    color: var(--paper-warm);
-  }
-
-  .analytics-consent-decline {
-    background: transparent;
-    color: var(--ink);
   }
 
   .product-site .site-footer {
@@ -1129,18 +970,6 @@
     color: #087982;
   }
 
-  .home .analytics-consent {
-    position: relative;
-    inset: auto;
-    width: min(1180px, calc(100% - 36px));
-    margin: 0 auto;
-    border-radius: 0;
-    border-top: 0;
-    background: rgba(250, 247, 239, 0.96);
-    box-shadow: 0 18px 55px rgba(36, 39, 41, 0.12);
-    transform: none;
-  }
-
   @media (prefers-reduced-motion: no-preference) {
     .personal-place,
     .personal-mast h1,
@@ -1361,15 +1190,6 @@
       border-top: 1px solid var(--rule);
     }
 
-    .home .analytics-consent {
-      width: 100%;
-      margin: 0;
-      border-right: 0;
-      border-left: 0;
-      border-radius: 0;
-      box-shadow: none;
-    }
-
     .resume-sections section {
       grid-template-columns: 1fr;
       gap: 7px;
@@ -1409,23 +1229,6 @@
       box-shadow: none;
     }
 
-    .analytics-consent {
-      right: auto;
-      bottom: 10px;
-      left: 50%;
-      grid-template-columns: 1fr;
-      gap: 7px;
-      width: calc(100vw - 20px);
-      padding: 16px;
-      border-radius: 14px;
-    }
-
-    .analytics-consent-actions {
-      grid-column: 1;
-      grid-row: auto;
-      margin-top: 6px;
-    }
-
     .site-footer,
     .product-site .site-footer {
       width: 100%;
@@ -1453,7 +1256,6 @@
 
     body::before,
     .back-link,
-    .analytics-consent,
     .site-footer {
       display: none;
     }
@@ -1478,16 +1280,6 @@
 <main>
   {{ content }}
 </main>
-{% if page.analytics != false %}
-<aside class="analytics-consent" id="analytics-consent" role="dialog" aria-modal="false" aria-labelledby="analytics-consent-title" hidden>
-  <h2 id="analytics-consent-title">Simple, private measurement.</h2>
-  <p>This site uses privacy-restricted Google Analytics to learn which pages are useful. No advertising, remarketing, or Google Signals. <a href="/privacy/">Read the details.</a></p>
-  <div class="analytics-consent-actions">
-    <button class="analytics-consent-accept" type="button" data-analytics-consent="granted">Allow analytics</button>
-    <button class="analytics-consent-decline" type="button" data-analytics-consent="denied">Decline</button>
-  </div>
-</aside>
-{% endif %}
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div class="site-footer-identity">
@@ -1501,9 +1293,6 @@
       <a href="https://studio.driftingforms.com" target="_blank" rel="noopener noreferrer">Studio</a>
       {% endunless %}
       <a href="/privacy/">Site privacy</a>
-      {% if page.analytics != false %}
-      <button type="button" id="analytics-choices">Analytics choices</button>
-      {% endif %}
     </nav>
   </div>
 </footer>
@@ -1512,69 +1301,6 @@
     image.addEventListener("dragstart", (event) => event.preventDefault());
     image.addEventListener("contextmenu", (event) => event.preventDefault());
   });
-
-  {% if page.analytics != false %}
-  (function () {
-    const analytics = window.krwillAnalytics;
-    const panel = document.getElementById("analytics-consent");
-    const choices = document.getElementById("analytics-choices");
-    let restoreChoiceFocus = false;
-
-    if (!analytics || !panel || !choices) return;
-
-    const clearAnalyticsCookies = () => {
-      document.cookie.split(";").forEach((cookie) => {
-        const name = cookie.split("=")[0].trim();
-        if (!name.startsWith("_ga")) return;
-        document.cookie = `${name}=; Max-Age=0; path=/; SameSite=Lax`;
-        document.cookie = `${name}=; Max-Age=0; path=/; domain=.krwill.xyz; SameSite=Lax`;
-      });
-    };
-
-    const saveChoice = (choice) => {
-      try {
-        window.localStorage.setItem(analytics.consentKey, choice);
-      } catch (error) {
-        // The in-page consent update still applies when storage is unavailable.
-      }
-
-      window[`ga-disable-${analytics.measurementId}`] = choice === "denied";
-      gtag(
-        "consent",
-        "update",
-        choice === "granted" ? analytics.grantedAnalytics : analytics.deniedByDefault
-      );
-
-      if (choice === "denied") {
-        clearAnalyticsCookies();
-      } else {
-        analytics.load();
-      }
-      panel.hidden = true;
-      if (restoreChoiceFocus) choices.focus();
-      restoreChoiceFocus = false;
-    };
-
-    panel.querySelectorAll("[data-analytics-consent]").forEach((button) => {
-      button.addEventListener("click", () => saveChoice(button.dataset.analyticsConsent));
-    });
-
-    choices.addEventListener("click", () => {
-      restoreChoiceFocus = true;
-      panel.hidden = false;
-      panel.querySelector("button").focus();
-    });
-
-    panel.addEventListener("keydown", (event) => {
-      if (event.key !== "Escape") return;
-      panel.hidden = true;
-      if (restoreChoiceFocus) choices.focus();
-      restoreChoiceFocus = false;
-    });
-
-    if (!analytics.savedConsent) panel.hidden = false;
-  }());
-  {% endif %}
 </script>
 </body>
 </html>

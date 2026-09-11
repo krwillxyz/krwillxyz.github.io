@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+SITE_ROOT=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
+CONTRACT="$SITE_ROOT/cloudflare/pages.json"
+CF_ENV=${CLOUDFLARE_EDGE_ENV_FILE:-/substrate/settings/env/life.services.network.driftingforms-web-edge.env}
+MODE=${1:---check}
+WORK_ROOT=
+
+usage() {
+  printf '%s\n' "usage: $0 --check | --deploy"
+}
+
+cleanup() {
+  if [[ -n ${WORK_ROOT:-} && -d $WORK_ROOT ]]; then
+    find "$WORK_ROOT" -type f -delete 2>/dev/null || true
+    find "$WORK_ROOT" -depth -type d -empty -delete 2>/dev/null || true
+  fi
+}
+trap cleanup EXIT
+
+if [[ $MODE != --check && $MODE != --deploy ]]; then
+  usage >&2
+  exit 2
+fi
+
+project=$(jq -er '.project' "$CONTRACT")
+account_id=$(jq -er '.account_id' "$CONTRACT")
+wrangler_version=$(jq -er '.wrangler_version' "$CONTRACT")
+staging_url=$(jq -er '.staging_url' "$CONTRACT")
+
+node "$SITE_ROOT/tests/resolver-worker.test.mjs"
+node --check "$SITE_ROOT/_worker.js"
+
+WORK_ROOT=$(mktemp -d /tmp/krwill-cloudflare.XXXXXX)
+mkdir "$WORK_ROOT/output"
+docker run --rm \
+  -v "$SITE_ROOT:/source:ro" \
+  -v "$WORK_ROOT/output:/output" \
+  ruby:3.3-bookworm \
+  bash -lc 'cp -a /source /tmp/site && cd /tmp/site && gem install bundler -v 2.6.9 --no-document >/dev/null && bundle config set path /tmp/bundle >/dev/null && bundle install --jobs 4 >/dev/null && bundle exec jekyll build --destination /output/site'
+
+artifact="$WORK_ROOT/output/site"
+test -s "$artifact/index.html"
+test -s "$artifact/privacy/index.html"
+test -s "$artifact/q/p6f5jt4szo/index.html"
+test -s "$artifact/q/w6q9tm/index.html"
+test -s "$artifact/_headers"
+test -s "$artifact/_worker.js"
+test ! -e "$artifact/tests"
+if rg -qi 'googletagmanager|G-4HXS6DPYT1|krwillAnalytics|Analytics choices' "$artifact"; then
+  echo "browser analytics remained in the Cloudflare artifact" >&2
+  exit 1
+fi
+
+if [[ $MODE == --check ]]; then
+  printf 'ok  project=%s artifact=%s analytics=edge-only resolver=/q/*\n' "$project" "$artifact"
+  exit 0
+fi
+
+test -r "$CF_ENV"
+set -a
+# shellcheck source=/dev/null
+. "$CF_ENV"
+set +a
+export CLOUDFLARE_ACCOUNT_ID=$account_id
+npx --yes "wrangler@$wrangler_version" pages deploy "$artifact" \
+  --project-name="$project" \
+  --branch=main \
+  --commit-dirty=true \
+  --commit-message='krwill.xyz source-owned Cloudflare deployment'
+
+curl -fsS "$staging_url/" | grep -Fq 'Kristopher Williams'
+curl -fsS "$staging_url/privacy/" | grep -Fq 'does not use Google Analytics'
+test "$(curl -sS -o /dev/null -w '%{http_code}' "$staging_url/q/not-a-pointer/")" = 302
+printf 'ok  deployed and accepted %s\n' "$staging_url"

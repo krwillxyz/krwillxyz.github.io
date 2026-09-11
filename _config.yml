@@ -4,6 +4,12 @@ description: "A quiet introduction to Kristopher Williams."
 social_image: /assets/social-card.svg
 plugins: [jekyll-seo-tag]
 permalink: /notes/:year/:month/:day/:title/
+include:
+  - _headers
+  - _worker.js
 exclude:
   - AGENTS
   - README.md
+  - cloudflare
+  - scripts
+  - tests

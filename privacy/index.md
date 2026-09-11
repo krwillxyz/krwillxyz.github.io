@@ -1,44 +1,43 @@
 ---
 layout: default
 title: Site Privacy | Kristopher Williams
-description: How krwill.xyz uses limited, consent-aware analytics and protects visitor privacy.
+description: How krwill.xyz handles ordinary web requests and limited, aggregate traffic measurement.
 body_class: site-document-page
 ---
 
 <article class="site-document-card">
   <p class="site-document-kicker">krwill.xyz · Privacy</p>
   <h1>Useful signal, kept in proportion.</h1>
-  <p class="site-document-intro">This site uses limited Google Analytics measurement to understand which public pages are useful. It does not use advertising, remarketing, or Google Signals, and I do not use analytics data to build personal profiles.</p>
+  <p class="site-document-intro">This site uses Cloudflare to deliver and protect its public pages and to provide aggregate traffic measurement. It does not use Google Analytics, advertising trackers, remarketing, or visitor profiles.</p>
 
   <section class="site-document-section">
     <h2>What is measured</h2>
-    <p>When analytics is allowed, Google Analytics can record the page viewed, referral source, session and engagement events, approximate geography, and browser or device characteristics. The site does not intentionally send names, email addresses, form contents, or other directly identifying information to Analytics.</p>
+    <p>Like any web host, Cloudflare processes the network information needed to answer a request, including the requested page, IP address, user agent, time, response status, and related security and performance information. Cloudflare's edge reports provide aggregate measures such as requests, bandwidth, approximate region, and detected automated or threatening traffic.</p>
   </section>
 
   <section class="site-document-section">
     <h2>Why</h2>
-    <p>The purpose is basic product and publishing feedback: understand what people visit, what they find useful, and where the site can be clearer. Analytics data is not sold, used for advertising, or used to make decisions about individual visitors.</p>
+    <p>The purpose is operational: understand whether the site is reachable, which public pages receive attention, and where publishing or navigation can improve. I do not sell this information, use it for advertising, or use it to make decisions about individual visitors.</p>
   </section>
 
   <section class="site-document-section">
-    <h2>Your choice</h2>
-    <p>Analytics storage is denied by default for visitors in the European Economic Area, United Kingdom, and Switzerland unless they allow it. A browser-level Global Privacy Control or Do Not Track request is also treated as a decline. Elsewhere, limited analytics may begin when a page loads. Anyone can decline or change the choice at any time through <strong>Analytics choices</strong> at the bottom of every page.</p>
-    <p>The choice is saved in local browser storage. If analytics is allowed, Google may set first-party cookies beginning with <code>_ga</code>. Explicitly declining disables future Google Analytics requests from this site and removes those cookies where the browser permits it.</p>
+    <h2>What the site does not add</h2>
+    <p>krwill.xyz does not add an analytics beacon, analytics cookies, or analytics values in local browser storage. Because this measurement comes from requests handled at Cloudflare's edge, there is no analytics preference panel to operate. Cloudflare may use strictly necessary cookies if a security feature requires them; those are for delivering or protecting the site, not advertising.</p>
   </section>
 
   <section class="site-document-section">
     <h2>Who receives the data</h2>
-    <p>Analytics information is processed by Google under its <a href="https://policies.google.com/privacy">privacy policy</a>. This site is hosted through GitHub Pages, so ordinary web requests also pass through GitHub infrastructure under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+    <p>Public pages and ordinary request information are processed by Cloudflare under its <a href="https://www.cloudflare.com/privacypolicy/">privacy policy</a>. The site's source may remain mirrored at GitHub, but GitHub is not the live web host after this migration.</p>
   </section>
 
   <section class="site-document-section">
     <h2>Browser extensions remain separate</h2>
-    <p>Pageprint and Page Push do not contain this site analytics code. Website analytics does not receive Pageprint screenshots, page URLs, usage state, or license data. It also does not receive Page Push payloads, endpoint configuration, authorization credentials, or delivery activity. See the separate <a href="/products/pageprint/privacy/">Pageprint</a> and <a href="/products/page-push/privacy/">Page Push</a> privacy statements.</p>
+    <p>Pageprint and Page Push do not contain website analytics code. This site's traffic reporting does not receive Pageprint screenshots, the pages someone prints, extension usage state, or license data. It also does not receive Page Push payloads, endpoint configuration, authorization credentials, or delivery activity. See the separate <a href="/products/pageprint/privacy/">Pageprint</a> and <a href="/products/page-push/privacy/">Page Push</a> privacy statements.</p>
   </section>
 
   <section class="site-document-section">
     <h2>Contact</h2>
     <p>Questions about this site or this privacy statement can be sent to <a href="mailto:support@krwill.xyz">support@krwill.xyz</a>.</p>
-    <p>Effective August 8, 2026. Last updated August 15, 2026.</p>
+    <p>Effective August 8, 2026. Last updated September 11, 2026.</p>
   </section>
 </article>
